@@ -404,13 +404,17 @@ body {
   font: #1F2041;
 }
 
+
 .wrapper {
   max-width: 1160px;
   margin: 0 auto;
 }
 
+/* header styles start */
+
 .header__wrapper {
     padding-top: 15px;
+    padding-bottom: 15px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;    
@@ -451,3 +455,17 @@ body {
 .header__nav:last-child {
     margin-right: 0;
 }
+
+/* header styles end */
+
+/* intro styles start */
+
+.intro {
+    padding-top: 100px;
+    display: flex;
+    height: 105vh;
+    background: url(../img/image-bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+/* intro styles end */
