@@ -408,6 +408,7 @@ body {
 .wrapper {
   max-width: 1160px;
   margin: 0 auto;
+    
 }
 
 /* header styles start */
@@ -460,12 +461,32 @@ body {
 
 /* intro styles start */
 
+
 .intro {
-    padding-top: 100px;
-    display: flex;
     height: 105vh;
     background: url(../img/image-bg.jpg) no-repeat center;
     background-size: cover;
+    padding-top: 70px;
+}
+
+.find {
+    width: 374px;
+    height: 380px;
+    background-color: white;
+    
+}
+
+.find__form {
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.find__title {
+    font-size: 24px;
+    font-family: 'Montserrat';
+    font-weight: bolder;
 }
 
 /* intro styles end */
