@@ -366,27 +366,6 @@ textarea {
 }
 
 
-
-
-
-
-@font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    src: url('./fonts/montserrat-v26-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* montserrat-900 - cyrillic_latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 900;
-    src: url('./fonts/montserrat-v26-cyrillic_latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-
-
 html {
   box-sizing: border-box;
 }
@@ -463,7 +442,7 @@ body {
 
 .intro {
     height: 105vh;
-    background: url(./img/image-bg.jpg) no-repeat center;
+    background: url(../img/image-bg.jpg) no-repeat center;
     background-size: cover;
     padding-top: 70px;
 }
