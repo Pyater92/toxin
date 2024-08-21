@@ -1,4 +1,8 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+/*const PAGES_DIR = `${PATHS.src}/pug/pages/`
+const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'))*/
+
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require('path');
 
@@ -21,12 +25,18 @@ module.exports = {
     filename: '[name].[contenthash].js',
     assetModuleFilename: 'assets/[hash][ext]' 
   },
-  plugins: [new HtmlWebpackPlugin({
-    template: path.resolve(__dirname, 'src', 'index.html')
-  }),
-  new MiniCssExtractPlugin({
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, 'src', 'index.pug'), /*template: './src/index.html' */
+        filename: 'index.html',
+    }),
+    new MiniCssExtractPlugin({
     filename: '[name].[contenthash].css',
-  }),    
+    }),
+    /*...PAGES.map(page => new HtmlWebpackPlugin({
+      template: `${PAGES_DIR}/${page}`,
+      filename: `./${page.replace(/\.pug/,'.html')}`
+    }))*/    
   ],
 module: {
   rules: [
@@ -50,31 +60,37 @@ module: {
     }
     },
     {
-      test: /\.(jpe?g |png|webp|gif|svg)$/i,
-      use : [
-    {
-      loader: 'image-webpack-loader',
-      options: {
-        mozjpeg: {
-          progressive: true,
-        },
-        // optipng.enabled: false will disable optipng
-        optipng: {
-          enabled: false,
-        },
-        pngquant: {
-          quality: [0.65, 0.90],
-          speed: 4
-        },
-        gifsicle: {
-          interlaced: false,
-        },
-        // the webp option will enable WEBP
-        webp: {
-          quality: 75
-        }
-      }
+      test: /\.pug$/,
+      loader: 'pug-loader',
+      
     },
+    {
+      test: /\.(jpg|png|webp|gif|svg)$/i,
+      use : [{
+        loader: 'image-webpack-loader',
+        options: {
+          name: '[name].[ext]',
+          type: 'asset/resource',   
+          mozjpeg: {
+            progressive: true,
+          },
+          // optipng.enabled: false will disable optipng
+          optipng: {
+            enabled: false,
+          },
+          pngquant: {
+            quality: [0.65, 0.90],
+            speed: 4
+          },
+          gifsicle: {
+            interlaced: false,
+          },
+          // the webp option will enable WEBP
+          webp: {
+            quality: 75
+          }
+        }
+      },
       ], 
     type: 'asset/resource',
     },  
