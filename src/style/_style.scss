@@ -393,8 +393,7 @@ body {
 /* header styles start */
 
 .header__wrapper {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    min-height: 70px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;    
@@ -412,6 +411,7 @@ body {
     flex-wrap: wrap;
     align-items: center;    
     justify-content: space-between;
+    line-height: 1.7;
 }
 
 .item:last-child {
@@ -421,6 +421,13 @@ body {
 .header__link {
     text-decoration: none;
     color: #1F2041;
+
+}
+
+.header__expand__link {
+    text-decoration: none;
+    color: #1F2041;
+    margin-right: 7px;
 }
 
 .header__nav {
@@ -476,21 +483,76 @@ body {
     align-items: start;    
     justify-content: space-between;
     line-height: 2.8;
-
+    
 }
 
+.resume {
+    margin-right: 38px;
+}
+
+.nav {
+    margin-right: 59px;
+}
+
+.about {
+    margin-right: 92px;
+}
+
+.helpdesk {
+    margin-right: 51px;
+}
+
+.subscription {
+    padding-right: 16px;
+}
 
 .title {
     font-size: 12px;
     font-weight: 550;
 }
 
+.logo {
+    margin-bottom: 19px;
+}
 
-.item {
-    padding-top: 6px;
+.item_sub {
+    padding-top: 8px;
     line-height: 1.7;
     
 }
+
+.down__footer {
+    min-height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;    
+    justify-content: space-between;
+}
+
+.copyright {
+    margin-right: 676px;
+}
+
+.line {
+    border-bottom: 1px solid #1F2041;
+}
+
+.twit {
+    margin-right: 20px;
+}
+
+
+.fb {
+    margin-right: 20px;
+}
+
+.inst {
+    margin-right: 0px;  
+}
+
+
+
+
 
 
 /* intro styles end 
