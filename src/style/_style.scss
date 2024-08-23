@@ -367,6 +367,7 @@ textarea {
 
 
 html {
+  font-size: 10px;
   box-sizing: border-box;
 }
 
@@ -377,28 +378,44 @@ html {
 body {
   font-family: 'Montserrat';
   font-style: normal;
-  font-size: 14px;
-  line-height: 1.2;
+  font-size: 1.4rem;
+  line-heght: 1.2;
   font-weight: normal;
-  font: #1F2041;
+  font: rgba(31, 32, 65, 0.75);
 }
 
 
 .wrapper {
-  max-width: 1160px;
+  max-width: 116rem;
   margin: 0 auto;
-    
+  height: 100%;
+      
 }
 
 /* header styles start */
 
 .header__wrapper {
-    min-height: 70px;
+    min-height: 7rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;    
     justify-content: space-between;
+    
 }
+
+.main__wrapper {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;       
+    justify-content: space-between;
+}
+
+.slogan {
+    align-self: end;
+    text-align: right;
+    line-height: 2.4rem;
+}
+
 
 .list {
     display: flex;
@@ -406,12 +423,13 @@ body {
 }
 
 .item {
-    margin-right: 20px;
+    margin-right: 2rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;    
     justify-content: space-between;
     line-height: 1.7;
+    color: rgba(31, 32, 65, 0.75);
 }
 
 .item:last-child {
@@ -420,14 +438,14 @@ body {
 
 .header__link {
     text-decoration: none;
-    color: #1F2041;
+    color: rgba(31, 32, 65, 0.5);
 
 }
 
 .header__expand__link {
     text-decoration: none;
-    color: #1F2041;
-    margin-right: 7px;
+    color: rgba(31, 32, 65, 0.5);
+    margin-right: 0.7rem;
 }
 
 .header__nav {
@@ -435,7 +453,7 @@ body {
     flex-wrap: wrap;
     align-items: center;    
     justify-content: space-between;
-    margin-right: 20px;  
+    margin-right: 2rem;  
 }
 
 .header__nav:last-child {
@@ -447,37 +465,39 @@ body {
 /* intro styles start */
 
 
-.intro {
+.desk__zone {
     height: 105vh;
     background: url(../img/image-bg.jpg) no-repeat center;
     background-size: cover;
-    padding-top: 70px;
+    padding-top: 7rem;
+    padding-bottom: 1.8rem;
 }
 
 
 .find {
-    width: 374px;
-    height: 380px;
+    width: 37.4rem;
+    height: 38rem;
     background-color: white;
+    align-self: start;
     
 }
 
 .find__form {
-    padding-top: 40px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 30px;
+    padding-top: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
 }
 
 .find__title {
-    font-size: 24px;
+    font-size: 2.4rem;
     font-family: 'Montserrat';
     font-weight: bolder;
 }
 
 .upper__footer {
-    padding-top: 104px;
-    padding-bottom: 100px;
+    padding-top: 10.4rem;
+    padding-bottom: 10rem;
     display: flex;
     flex-wrap: wrap;
     align-items: start;    
@@ -487,42 +507,43 @@ body {
 }
 
 .resume {
-    margin-right: 38px;
+    margin-right: 3.8rem;
 }
 
 .nav {
-    margin-right: 59px;
+    margin-right: 5.9rem;
 }
 
 .about {
-    margin-right: 92px;
+    margin-right: 9.2rem;
 }
 
 .helpdesk {
-    margin-right: 51px;
+    margin-right: 5.1rem;
 }
 
 .subscription {
-    padding-right: 16px;
+    padding-right: 1.6rem;
+    color: rgba(31, 32, 65, 0.75);
 }
 
 .title {
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 550;
 }
 
 .logo {
-    margin-bottom: 19px;
+    margin-bottom: 1.9rem;
 }
 
 .item_sub {
-    padding-top: 8px;
+    padding-top: 0.8rem;
     line-height: 1.7;
     
 }
 
 .down__footer {
-    min-height: 70px;
+    min-height: 7rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;    
@@ -530,24 +551,30 @@ body {
 }
 
 .copyright {
-    margin-right: 676px;
+    margin-right: 67.6rem;
+    color: rgba(31, 32, 65, 0.75);
 }
 
 .line {
-    border-bottom: 1px solid #1F2041;
+    border-bottom: 0.1rem solid #E5E5E5;
 }
 
 .twit {
-    margin-right: 20px;
+    margin-right: 2rem;
 }
 
 
 .fb {
-    margin-right: 20px;
+    margin-right: 2rem;
 }
 
 .inst {
-    margin-right: 0px;  
+    margin-right: 0rem;  
+}
+
+
+h3 {
+    color: rgba(31, 32, 65, 1);
 }
 
 
