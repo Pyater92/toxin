@@ -6,79 +6,89 @@ footer
           ul.list
             li.item
               .logo
-                img(src=require("../img/svg/toxin_logo.svg") alt="Логотип TOXIN")
+                img(
+                  src=require("../img/svg/toxin_logo.svg"),
+                  alt="Логотип TOXIN"
+                )
           ul
-            li.item
+            li.item__resume
               p
                 | Бронирование номеров в лучшем
                 br
-                |  отеле 2019 года по версии 
+                |
+                | отеле 2019 года по версии
                 br
-                |  ассоциации «Отельные взгляды»
+                |
+                | ассоциации «Отельные взгляды»
         .nav
           ul
             li
-              h3.title НАВИГАЦИЯ
+              span.title НАВИГАЦИЯ
           ul
             li
-              a.header__link(href='#!') О нас
+              a.header__link(href="#!") О нас
           ul
             li
-              a.header__link(href='#!') Новости
+              a.header__link(href="#!") Новости
           ul
             li
-              a.header__link(href='#!') Служба поддержки
+              a.header__link(href="#!") Служба поддержки
           ul
             li
-              a.header__link(href='#!') Услуги
+              a.header__link(href="#!") Услуги
         .about
           ul
             li
-              h3.title О НАС
+              span.title О НАС
           ul
             li
-              a.header__link(href='#!') О сервисе
+              a.header__link(href="#!") О сервисе
           ul
             li
-              a.header__link(href='#!') Наша команда
+              a.header__link(href="#!") Наша команда
           ul
             li
-              a.header__link(href='#!') Вакансии
+              a.header__link(href="#!") Вакансии
           ul
             li
-              a.header__link(href='#!') Инвесторы
+              a.header__link(href="#!") Инвесторы
         .helpdesk
           ul
             li
-              h3.title СЛУЖБА ПОДДЕРЖКИ
+              span.title СЛУЖБА ПОДДЕРЖКИ
           ul
             li
-              a.header__link(href='#!') Соглашения
+              a.header__link(href="#!") Соглашения
           ul
             li
-              a.header__link(href='#!') Сообщества
+              a.header__link(href="#!") Сообщества
           ul
             li
-              a.header__link(href='#!') Связь с нами
+              a.header__link(href="#!") Связь с нами
 
         .subscription
           ul
             li
-              h3.title ПОДПИСКА
+              span.title ПОДПИСКА
           ul
-            li.item_sub
+            li.item__sub
               p
                 | Получайте специальные
                 br
-                |  предложения и новости сервиса
+                | предложения и новости сервиса
+          ul
+            li
+              .subscribe__form
+                p.adds Email
+                img.arrowForwardLila(src=require("../img/svg/arrow_forwardLila.svg"), alt="")
   .line
   .wrapper
     .down__footer
       .copyright
         p Copyright © 2018 Toxin отель. Все права защищены.
       .twit
-        img(src=require("../img/svg/twit.svg") alt="Twitter")
+        img(src=require("../img/svg/twit.svg"), alt="Twitter")
       .fb
-        img(src=require("../img/svg/fb.svg") alt="Facebook")
+        img(src=require("../img/svg/fb.svg"), alt="Facebook")
       .inst
-        img(src=require("../img/svg/inst.svg") alt="Instagram")
+        img(src=require("../img/svg/inst.svg"), alt="Instagram")

@@ -5,10 +5,57 @@ main
         .find
           .find__form
             h1.find__title Найдём номера под ваши пожелания
+            ul
+              li
+                .forms
+                  .coming
+                    span.title ПРИБЫТИЕ                      
+                    .box__date
+                      p.date ДД.ММ.ГГГГ
+                      img.expand(src=require("../img/svg/expand_more.svg"), alt="")
+                       
+                  .exit
+                    span.title ВЫЕЗД
+                    .box__date
+                      p.date ДД.ММ.ГГГГ
+                      img.expand(src=require("../img/svg/expand_more.svg"), alt="")
+            ul
+              li
+                .guests
+                  span.title ГОСТИ
+                  #myDropdown.dropdown__guests
+                    .box__guests 
+                      p.number__guests Сколько гостей 
+                      img.expand(src=require("../img/svg/expand_more.svg"), alt="")
+                      #dropDown__content.dropdown__guests-content
+                        a.header__link(href="#!") Один гость
+                        a.header__link(href="#!") Два гостя
+                        a.header__link(href="#!") Три гостя
+                        a.header__link(href="#!") Толпа  
+  
+                        
+            ul
+              li
+                a.personal__link(href="/")
+                  .pickUpButton
+                    p.pickUpButton__title ПОДОБРАТЬ НОМЕР
+                    img.arrowForward(src=require("../img/svg/arrow_forwardWhite.svg"), alt="")
+                   
+                
+  
         .slogan
           p
           | Лучшие номера для вашей работы,
           br
-          |  отдыха и просто вдохновения 
+          |
+          | отдыха и просто вдохновения
           br
           |
+
+
+
+
+
+
+//- form(action="" method="GET")
+                      input(type="text" id="datepicker")  //
