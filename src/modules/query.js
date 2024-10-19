@@ -1,25 +1,20 @@
-document.getElementById("myDropdown").addEventListener ("click", myFunction, false);
-
-function myFunction() {
-  document.getElementById("dropDown__content").classList.toggle("show");
-}
 
 
 
 
-
-window.onclick = function(event) {
-  if (!event.target.matches('.dropdown__guests')) {
-    var dropdowns = document.getElementsByClassName("dropdown__guests-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-//function myFunction() {
-//  document.getElementById("myDropdown").classList.toggle("show");
-//}
+$(".dropdown__guests").on("click", function() {
+	$(".dropdown__guests-content").show();
+  });
+  
+  
+  
+  $(function($){
+	  $(document).mouseup( function(e){ // событие клика по веб-документу
+		  var div = $( ".dropdown__guests-content" ); // тут указываем ID элемента
+		  if ( !div.is(e.target) // если клик был не по нашему блоку
+			  && div.has(e.target).length === 0 ) { // и не по его дочерним элементам
+			  div.hide(); // скрываем его
+		  }
+	  });
+  });
+  

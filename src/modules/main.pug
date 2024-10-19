@@ -9,10 +9,20 @@ main
               li
                 .forms
                   .coming
-                    span.title ПРИБЫТИЕ                      
-                    .box__date
-                      p.date ДД.ММ.ГГГГ
-                      img.expand(src=require("../img/svg/expand_more.svg"), alt="")
+                    span.title ПРИБЫТИЕ
+                    #input.boxDate
+                      .box__date
+                        p.date ДД.ММ.ГГГГ
+                        img.expand(src=require("../img/svg/expand_more.svg"), alt="")
+                        .dateComing-content
+                          ul
+                            li
+                              
+                          ul
+                            li
+                              
+                                                
+                    
                        
                   .exit
                     span.title ВЫЕЗД
@@ -23,15 +33,23 @@ main
               li
                 .guests
                   span.title ГОСТИ
-                  #myDropdown.dropdown__guests
+                  #dropdownGuests.dropdown__guests
                     .box__guests 
                       p.number__guests Сколько гостей 
                       img.expand(src=require("../img/svg/expand_more.svg"), alt="")
-                      #dropDown__content.dropdown__guests-content
-                        a.header__link(href="#!") Один гость
-                        a.header__link(href="#!") Два гостя
-                        a.header__link(href="#!") Три гостя
-                        a.header__link(href="#!") Толпа  
+                      .dropdown__guests-content
+                        ul
+                          li
+                            a.header__link(href="#!") Один гость
+                        ul
+                          li
+                            a.header__link(href="#!") Два гостя
+                        ul
+                          li
+                            a.header__link(href="#!") Три гостя
+                        ul
+                          li
+                            a.header__link(href="#!") Толпа  
   
                         
             ul
