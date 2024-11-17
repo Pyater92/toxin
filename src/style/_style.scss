@@ -165,13 +165,14 @@ body {
 
 
 .find {
-    width: 37.4rem;
-    height: 38rem;
+    width: 38rem;
+    height: 37.4rem;
     background-color: white;
     align-self: start;    
 }
 
 .find__form {
+    position: relative;
     padding-top: 4rem;
     padding-left: 3rem;
     padding-right: 3rem;
@@ -180,6 +181,7 @@ body {
 
 .find__title {
     font-size: 2.4rem;
+    line-height: normal;
     font-family: 'Montserrat Bold';
     margin-bottom: 2.1rem;
     color: #1F2041;
@@ -258,9 +260,34 @@ body {
     align-items: center;    
     justify-content: space-between;
     margin-bottom: 2rem;
+    margin-right: 2rem;
 }
 
-.box__date {
+.forms:last-child {
+
+    margin-right: 0;
+
+}
+
+.date__box {
+    position: relative;
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+    width: 15rem;
+    height: 4.4rem;
+    border: 0.1rem solid;
+    border-color: #E5E5E5;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+    
+}
+
+.date__exiting {
     display: flex;
     align-items: center;    
     justify-content: space-between;
@@ -276,9 +303,40 @@ body {
     padding-left: 1.5rem;
 }
 
+.expand__coming {
+    position: absolute;
+    left: 12rem;
+    top: 3.9rem;
+    margin-right: -0.5rem;
+}
+
+.expand__exiting {
+    position: absolute;
+    left: 12rem;
+    top: 3.9rem;
+    margin-right: -0.5rem;
+}
+
+
 .expand {
     margin-right: 1.5rem;
 }
+
+.input-date__click-area {
+    position: absolute;
+    display: block;
+    top: 1.9rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    width: 15rem;
+    height: 4.409rem;
+}
+
+
+
+
 
 .guests {
     margin-bottom: 0.5rem;
@@ -301,7 +359,16 @@ body {
 }
 
 .coming {
-    margin-right: 1rem ;
+    
+    position: relative;
+    margin-right: 2rem;
+    
+}
+
+.exit {
+
+    position: relative;
+    
 }
 
 .item__resume {
@@ -365,8 +432,9 @@ body {
     position: relative;
 }
 
-.boxDate {
-    position: relative;
+.box__date {
+    display: flex;
+    justify-content: space-between;
 }
 
 .dropdown__guests-content {
@@ -385,31 +453,149 @@ body {
     border-bottom-right-radius: 0.5rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    z-index: 1;
+    
 }
 
-.dateComing-content {
-    display: none;
-    position: absolute;
-    top: 4.4rem;
-    left: 0rem;
-    background-color: #FFF;
-    min-width: 100%;
-    height: 15.9rem;
-    padding: 1.56rem 1.5rem;
-    border: 0.1rem solid;
-    border-color: #1F204150;
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    z-index: 1;
-}
+
 
 .number__guests {
     margin-left: 1.5rem;
 }
 
 .show {display: block;}
+
+.box__date:last-child {
+    margin-right: 0;
+}
+
+
+.air-datepicker.-inline- {
+    border-color:var(--adp-border-color-inline);
+    box-shadow:none;
+    position:absolute;
+    left:3rem;
+    right:100%;
+    top: 18.8rem;
+    opacity:1;
+    transform:none;
+    padding-top: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 320px;
+}
+
+.air-datepicker{
+    --adp-font-family: -apple-system, BlinkMacSystemFont, "Montserrat";
+    --adp-font-size: 12px;
+    --adp-width: 246px;
+    --adp-z-index: 100;
+    --adp-padding: 18px;
+    --adp-grid-areas: "nav" "body" "timepicker" "buttons";
+    --adp-transition-duration: .3s;
+    --adp-transition-ease: ease-out;
+    --adp-transition-offset: 8px;
+    --adp-background-color: #fff;
+    --adp-background-color-hover: #f0f0f0;
+    --adp-background-color-active: #eaeaea;
+    --adp-background-color-in-range: rgba(92, 195, 239, 0.158);
+    --adp-background-color-in-range-focused: rgba(92, 196, 239, .2);
+    --adp-background-color-selected-other-month-focused: #8ad5f4;
+    --adp-background-color-selected-other-month: #a2ddf6;
+    --adp-color: #4a4a4a;--adp-color-secondary: #9c9c9c;
+    --adp-accent-color: #4eb5e6;
+    --adp-color-current-date: var(--adp-accent-color);
+    --adp-color-other-month: #dedede;
+    --adp-color-disabled: #aeaeae;
+    --adp-color-disabled-in-range: #939393;
+    --adp-color-other-month-hover: #c5c5c5;
+    --adp-border-color: #dbdbdb;
+    --adp-border-color-inner: #efefef;
+    --adp-border-radius: 4hpx;
+    --adp-border-color-inline: #d7d7d7;
+    --adp-nav-height: 32px;
+    --adp-nav-arrow-color: var(--adp-color-secondary);
+    --adp-nav-action-size: 32px;
+    --adp-nav-color-secondary: var(--adp-color-secondary);
+    --adp-day-name-color: #BC9CFF;
+    --adp-day-name-color-hover: #8ad5f4;
+    --adp-day-cell-width: 4rem;
+    --adp-day-cell-height: 4rem;
+    --adp-month-cell-height: 42px;
+    --adp-year-cell-height: 56px;
+    --adp-pointer-size: 10px;
+    --adp-poiner-border-radius: 2px;
+    --adp-pointer-offset: 14px;
+    --adp-cell-border-radius: 4px;
+    --adp-cell-background-color-hover: var(--adp-background-color-hover);
+    --adp-cell-background-color-selected: #5cc4ef;
+    --adp-cell-background-color-selected-hover: #45bced;
+    --adp-cell-background-color-in-range: rgba(92, 196, 239, 0.1);
+    --adp-cell-background-color-in-range-hover: rgba(92, 196, 239, 0.2);
+    --adp-cell-border-color-in-range: var(--adp-cell-background-color-selected);
+    --adp-btn-height: 32px;
+    --adp-btn-color: var(--adp-accent-color);
+    --adp-btn-color-hover: var(--adp-color);
+    --adp-btn-border-radius: var(--adp-border-radius);
+    --adp-btn-background-color-hover: var(--adp-background-color-hover);
+    --adp-btn-background-color-active: var(--adp-background-color-active);
+    --adp-time-track-height: 1px;
+    --adp-time-track-color: #dedede;
+    --adp-time-track-color-hover: #b1b1b1;
+    --adp-time-thumb-size: 12px;
+    --adp-time-padding-inner: 10px;
+    --adp-time-day-period-color: var(--adp-color-secondary);
+    --adp-mobile-font-size: 16px;
+    --adp-mobile-nav-height: 40px;
+    --adp-mobile-width: 320px;
+    --adp-mobile-day-cell-height: 38px;
+    --adp-mobile-month-cell-height: 48px;
+    --adp-mobile-year-cell-height: 64px
+}
+
+.air-datepicker-body--day-name{
+    margin: 0; 
+    width: 4rem; 
+    height: 4rem;
+    font-family: "Montserrat Bold";
+    text-transform:none;
+    font-size: 1.2rem;
+}
+
+.air-datepicker-nav--title {font-style:bold;color:var(--adp-nav-color-secondary);margin-left:.3em}
+
+.air-datepicker-button span{
+    outline:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;height:100%; 
+    color: #BC9CFF; 
+    text-transform: uppercase;
+    font-family:"Montserrat Bold" ;
+}
+
+.air-datepicker-nav--title{display:flex;cursor:pointer;align-items:center;justify-content:center; font-family:"Montserrat Bold"; font-size: 1.9rem;}
+
+.air-datepicker-nav{
+    display:flex;
+    justify-content:space-between;
+    border-bottom:none;
+    padding:var(--adp-padding);
+    padding-bottom: 0;
+    padding-top: 0.3rem;
+    box-sizing:content-box
+}
+
+.air-datepicker--buttons,.air-datepicker--time{
+    padding:0;
+    border-top:none;
+
+}
+
+.air-datepicker--content{
+    box-sizing:border-box;
+    padding:var(--adp-padding);
+    grid-area:body
+}
+
+.air-datepicker-body--day-names{display:grid;grid-template-columns:repeat(7, var(--adp-day-cell-width))}

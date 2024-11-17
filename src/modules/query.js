@@ -1,20 +1,19 @@
+import AirDatepicker from 'air-datepicker';
 
 
+$('.input-date__click-area').one('click', function(){
 
+  let button = {
+    content: 'Применить',
+    className: 'custom-button-classname',
+    onClick: (dp) => {
+        let date = new Date('2021-07-26');
+        dp.selectDate(date);
+        dp.setViewDate(date);
+    }
+}
 
-$(".dropdown__guests").on("click", function() {
-	$(".dropdown__guests-content").show();
-  });
-  
-  
-  
-  $(function($){
-	  $(document).mouseup( function(e){ // событие клика по веб-документу
-		  var div = $( ".dropdown__guests-content" ); // тут указываем ID элемента
-		  if ( !div.is(e.target) // если клик был не по нашему блоку
-			  && div.has(e.target).length === 0 ) { // и не по его дочерним элементам
-			  div.hide(); // скрываем его
-		  }
-	  });
-  });
-  
+new AirDatepicker('.find__form', {
+    range: true, multipleDatesSeparator: ' - ',
+    buttons: ['clear', button] // Custom button, and pre-installed 'clear' button
+})})
