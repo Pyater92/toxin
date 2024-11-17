@@ -598,4 +598,7 @@ body {
     grid-area:body
 }
 
-.air-datepicker-body--day-names{display:grid;grid-template-columns:repeat(7, var(--adp-day-cell-width))}
+.air-datepicker-body--day-names{
+    display:grid;
+    grid-template-columns:repeat(7, var(--adp-day-cell-width))
+}
