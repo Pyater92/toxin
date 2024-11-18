@@ -10,25 +10,16 @@ main
                 .forms
                   .coming
                     span.title ПРИБЫТИЕ
-                    #input.boxDate
-                      .box__date
-                        p.date ДД.ММ.ГГГГ
-                        img.expand(src=require("../img/svg/expand_more.svg"), alt="")
-                        .dateComing-content
-                          ul
-                            li
-                              
-                          ul
-                            li
-                              
-                                                
-                    
+                    input.date__box(placeholder="ДД.ММ.ГГГГ" name="arrival" required="")  
+                    img.expand__coming(src=require("../img/svg/expand_more.svg"), alt="")
+                    .input-date__click-area
+
                        
                   .exit
                     span.title ВЫЕЗД
-                    .box__date
-                      p.date ДД.ММ.ГГГГ
-                      img.expand(src=require("../img/svg/expand_more.svg"), alt="")
+                    input.date__box(placeholder="ДД.ММ.ГГГГ" name="arrival" required="")
+                    img.expand__exiting(src=require("../img/svg/expand_more.svg"), alt="")
+                    .input-date__click-area
             ul
               li
                 .guests
@@ -69,11 +60,3 @@ main
           | отдыха и просто вдохновения
           br
           |
-
-
-
-
-
-
-//- form(action="" method="GET")
-                      input(type="text" id="datepicker")  //
