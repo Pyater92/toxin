@@ -15,5 +15,5 @@ $('.input-date__click-area').one('click', function(){
 
 new AirDatepicker('.find__form', {
     range: true, multipleDatesSeparator: ' - ',
-    buttons: ['clear', button] // Custom button, and pre-installed 'clear' button
+    buttons: ['clear', button]
 })})
