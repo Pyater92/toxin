@@ -1,4 +1,4 @@
-import AirDatepicker from 'air-datepicker';
+import AirDatepicker from "../../node_modules/air-datepicker";
 
 
 $('.input-date__click-area').one('click', function(){

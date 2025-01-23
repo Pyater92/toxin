@@ -529,7 +529,7 @@ body {
     --adp-pointer-size: 10px;
     --adp-pointer-border-radius: 2px;
     --adp-pointer-offset: 14px;
-    --adp-cell-border-radius: 20px;
+    --adp-cell-border-radius: 50%;
     --adp-cell-background-color-hover: linear-gradient(#6FCF97 0%, #66D2EA 100%);
     --adp-cell-background-color-selected: linear-gradient(#BC9CFF 0%, #8BA4F9 100%);
     --adp-cell-background-color-selected-hover: linear-gradient(#c9b8ee 0%, #8BA4F9 100%);
@@ -555,6 +555,7 @@ body {
     --adp-mobile-month-cell-height: 48px;
     --adp-mobile-year-cell-height: 64px;
 }
+
 
 .air-datepicker-body--day-name{
     margin: 0; 

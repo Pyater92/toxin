@@ -1,7 +1,5 @@
-import  './modules/query.js'
+import  '../../../modules/query'
 import  './index.pug';
-//import AirDatepicker from 'air-datepicker';
-import 'air-datepicker/air-datepicker.css';
 import  './index.scss';
 
 
