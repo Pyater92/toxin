@@ -1,5 +1,5 @@
 import AirDatepicker from 'air-datepicker';
-
+import 'air-datepicker/air-datepicker.css';
 
 $('.input-date__click-area').one('click', function(){
 
