@@ -1,3 +1,6 @@
-@import '../../assets/libs/';
-@import 'src/assets/fonts/';
-@import 'style/style';
+@use '/src/styles/styles';
+@use '/src/styles/fonts';
+@use '/src/blocks/header/header';
+@use '/src/blocks/main/main';
+@use '/src/blocks/air-datepicker/air-datepicker';
+@use '/src/blocks/footer/footer';

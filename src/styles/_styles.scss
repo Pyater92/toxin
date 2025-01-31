@@ -1,0 +1,23 @@
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {  
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-size: 1.4rem;
+  font-weight: normal;
+  font: #1F2041;
+}
+
+
+.wrapper {
+  max-width: 116rem;
+  margin: 0 auto;
+  height: 100%;      
+}

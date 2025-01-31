@@ -1,0 +1,45 @@
+.main__wrapper {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;       
+    justify-content: space-between;
+}
+
+.slogan {
+    align-self: end;
+    text-align: right;
+    line-height: 2.4rem;
+}
+
+
+.desk__zone {
+    height: 105vh;
+    background: url(/src/assets/img/image-bg.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 7rem;
+    padding-bottom: 1.8rem;
+}
+
+
+.find {
+    width: 38rem;
+    height: 37.4rem;
+    background-color: white;
+    align-self: start;    
+}
+
+.find__form {
+    position: relative;
+    padding-top: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+}
+
+.find__title {
+    font-size: 2.4rem;
+    line-height: normal;
+    font-family: 'Montserrat Bold';
+    margin-bottom: 2.1rem;
+    color: #1F2041;
+}
