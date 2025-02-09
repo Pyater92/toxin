@@ -1,65 +1,116 @@
-.upper__footer {
+.footer-container__upper {
     padding-top: 10.4rem;
     padding-bottom: 10rem;
     display: flex;
     align-items: start;    
     justify-content: space-between;
-    line-height: 2.8;    
+    line-height: 2.8;
+    white-space: nowrap;
 }
 
-.resume {
+.footer-container__resume {
+    padding-top: 1rem;
     margin-right: 3.8rem;
+    line-height: 2.4rem;
 }
 
-.nav {
-    margin-right: 5.9rem;
-}
-
-.about {
-    margin-right: 9.2rem;
-}
-
-.helpdesk {
-    margin-right: 5.1rem;
-}
-
-.subscription {
-    padding-right: 1.6rem;
-    color: #1F2041BF;
+.resume-text {
+    padding-top: 1.7rem;
 }
 
 .title {
     white-space: nowrap;
     font-family: "Montserrat Bold";
     font-size: 1.2rem;
-    color: #1F2041;
+    color: #1F2041; 
+
 }
 
-.down__footer {
+.footer-container__site-map {
+    margin-right: 5.9rem;
+}
+
+.footer-container__about {
+    margin-right: 9.2rem;
+}
+
+.footer-container__helpdesk {
+    margin-right: 5.1rem;
+}
+
+.socials {
+    padding-right: 1.6rem;
+    color: #1F2041BF;
+}
+
+.socials__title {
+    font-family: "Montserrat Bold";
+    font-size: 1.2rem;
+    color: #1F2041;
+    
+}
+
+
+.socials__item {
+    margin-top: 0.4rem;
+    line-height: 2.4rem;
+}
+
+.arrowForwardLila {
+    position: absolute;
+    right: 1.3rem;
+    background-color: linear-gradient(#BC9CFF 0%, #8BA4F9 100%);    
+}
+
+
+.socials__form {
+    margin-top: 2rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26rem;
+    height: 4.4rem;
+    border: 0.1rem solid;
+    border-color: #E5E5E5;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.socials__adds {
+    position: absolute;
+    left: 1.5rem;
+}
+
+.footer-container__down {
     min-height: 7rem;
     display: flex;
     align-items: center;    
     justify-content: space-between;
 }
 
-.copyright {
+.footer-container__copyright {
     margin-right: 67.6rem;
     color: #1F2041BF;
 }
 
-.line {
+.footer-container__line {
     border-bottom: 0.1rem solid #E5E5E5;
 }
 
-.twit {
+.footer-container__twitter {
     margin-right: 2rem;
 }
 
 
-.fb {
+.footer-container__fb {
     margin-right: 2rem;
 }
 
-.inst {
+.footer-container__instagram {
     margin-right: 0rem;  
 }

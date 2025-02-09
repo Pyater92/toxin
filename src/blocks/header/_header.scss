@@ -1,4 +1,4 @@
-.header__wrapper {
+.header-container {
     min-height: 7rem;
     display: flex;
     align-items: center;    
@@ -7,11 +7,11 @@
 }
 
 
-.list {
+.navigation__list {
     display: flex;
 }
 
-.item {
+.navigation__item {
     margin-right: 2rem;
     display: flex;
     align-items: center;    
@@ -19,65 +19,56 @@
     color: #1F2041;
 }
 
-.item__sub {
+/**.item__sub {
     line-height: 2.4rem;
     padding-top: 0.7rem;
-}
+}**/
 
-.item:last-child {
+.navigation__item:last-child {
     margin-right: 0;
 }
 
-.header__link {
+.link {
     text-decoration: none;
     color: #1F204175;
 }
 
-.header__expand__link {
+.navigation__expand-link {
     text-decoration: none;
     color: #1F204175;
     margin-right: 0.7rem;
 }
 
-.header__nav {
+.header-main__navigation {
     display: flex;
     align-items: center;    
     justify-content: space-between;
     margin-right: 2rem;  
 }
 
-.header__nav:last-child {
+.header-main__navigation:last-child {
     margin-right: 0;
 }
 
-.sigInButton {
-    font-family: "Montserrat Bold";
-    font-size: 1.2rem;
-    color: #BC9CFF;    
-    background-color: white;
-    border-color: linear-gradient(#000 0%, #8BA4F9 100%);
-    width: 8.7rem;
-    height: 3.4rem;
-    border-radius: 3.4rem;
-    border: 0.3rem solid;
-    border: linear-gradient(#b97de1 0%, #9757b5 100%);
-}
 
-.sighInButton {
+.sigh-in-button {
     font-family: "Montserrat Bold";
     font-size: 1.2rem;
     width: 8.7rem;
     height: 3.4rem;
     border-radius: 3.4rem;
-    background: #fff;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #BC9CFF;
+    background-color: white;
+    border-color: linear-gradient(#000 0%, #8BA4F9 100%);
+    border: 0.3rem solid;
+    border: linear-gradient(#b97de1 0%, #9757b5 100%);
   }
   
-.sighInButton::before {
+.sigh-in-button::before {
     font-family: "Montserrat Bold";
     font-size: 1.2rem;
     content: "";
@@ -92,7 +83,7 @@
   }
 
 
-.sighUpButton {
+.sigh-up-button {
     font-family: "Montserrat Bold";
     font-size: 1.2rem;
     color: white;    

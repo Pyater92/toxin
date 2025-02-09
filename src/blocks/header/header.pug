@@ -1,31 +1,30 @@
 header.header
   .wrapper
-    .header__wrapper
+    .header-container
       a(href="#") 
         img(src=require("/src/assets/img/svg/toxin_logo.svg"), alt="Логотип TOXIN") 
-
-      nav.header__nav
-        ul.list
-          li.item
-            a.header__link(href="#!") О нас
-          li.item
-            a.header__expand__link(href="#!") Услуги
-            a.header__link(href="#!")
+      nav.header-main__navigation
+        ul.navigation__list
+          li.navigation__item
+            a.link(href="#!") О нас
+          li.navigation__item
+            a.navigation__expand-link(href="#!") Услуги
+            a.link(href="#!")
               img(src=require("/src/assets/img/svg/expand_more.svg"), alt="") 
-          li.item
-            a.header__link(href="#!") Вакансии
-          li.item
-            a.header__link(href="#!") Новости
-          li.item
-            a.header__expand__link(href="#!") Соглашения
-            a.header__link(href="#!")
+          li.navigation__item
+            a.link(href="#!") Вакансии
+          li.navigation__item
+            a.link(href="#!") Новости
+          li.navigation__item
+            a.navigation__expand-link(href="#!") Соглашения
+            a.link(href="#!")
               img(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
-          li.item
-            a.personal__link(href="/")
-              .sighInButton
-                p.sighInButton__title ВОЙТИ
-          li.item
-            a.personal__link(href="/")
-              .sighUpButton
-                p.sighUpButton__title ЗАРЕГИСТРИРОВАТЬСЯ
+          li.navigation__item
+            a.link(href="/")
+              .sigh-in-button
+                p.sigh-in-button__title ВОЙТИ
+          li.navigation__item
+            a.link(href="/")
+              .sigh-up-button
+                p.sigh-up-button__title ЗАРЕГИСТРИРОВАТЬСЯ
               

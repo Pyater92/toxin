@@ -1,57 +1,49 @@
-main
-  section.desk__zone
+main.main
     .wrapper
-      .main__wrapper
-        .find
-          .find__form
-            h1.find__title Найдём номера под ваши пожелания
-            ul
-              li
-                .forms
-                  .coming
-                    span.title ПРИБЫТИЕ
-                    input.date__box(placeholder="ДД.ММ.ГГГГ" name="arrival" required="")  
-                    img.expand__coming(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
-                    .input-date__click-area
-
+      .main-container
+        .find-form
+          h1.find-form__title Найдём номера под ваши пожелания
+          ul
+            li
+              .find-form__dates
+                .date__coming
+                  span.title ПРИБЫТИЕ
+                  input.date-box(placeholder="ДД.ММ.ГГГГ" name="arrival" required="")  
+                  img.expand-coming(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
+                  .input-date-click-area
                        
-                  .exit
-                    span.title ВЫЕЗД
-                    input.date__box(placeholder="ДД.ММ.ГГГГ" name="arrival" required="")
-                    img.expand__exiting(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
-                    .input-date__click-area
-            ul
-              li
-                .guests
-                  span.title ГОСТИ
-                  #dropdownGuests.dropdown__guests
-                    .box__guests 
-                      p.number__guests Сколько гостей 
-                      img.expand(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
-                      .dropdown__guests-content
-                        ul
-                          li
-                            a.header__link(href="#!") Один гость
-                        ul
-                          li
-                            a.header__link(href="#!") Два гостя
-                        ul
-                          li
-                            a.header__link(href="#!") Три гостя
-                        ul
-                          li
-                            a.header__link(href="#!") Толпа  
-  
-                        
-            ul
-              li
-                a.personal__link(href="/")
-                  .pickUpButton
-                    p.pickUpButton__title ПОДОБРАТЬ НОМЕР
-                    img.arrowForward(src=require("/src/assets/img/svg/arrow_forwardWhite.svg"), alt="")
-                   
-                
-  
+                .date__leaving
+                  span.title ВЫЕЗД
+                  input.date-box(placeholder="ДД.ММ.ГГГГ" name="arrival" required="")
+                  img.expand-leaving(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
+                  .input-date-click-area
+          ul
+            li
+              .find-form__guests
+                span.title ГОСТИ
+                .dropdown__guests
+                  .box__guests 
+                    p.number__guests Сколько гостей 
+                    img.expand(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
+                    .dropdown__guests-content
+                      ul
+                        li
+                          a.link(href="#!") Один гость
+                      ul
+                        li
+                          a.link(href="#!") Два гостя
+                      ul
+                        li
+                          a.link(href="#!") Три гостя
+                      ul
+                        li
+                          a.link(href="#!") Толпа  
+          ul
+            li
+              a.personal__link(href="/")
+                .pickUpButton
+                  p.pickUpButton__title ПОДОБРАТЬ НОМЕР
+                  img.arrowForward(src=require("/src/assets/img/svg/arrow_forwardWhite.svg"), alt="")
         .slogan
           p
           | Лучшие номера для вашей работы,

@@ -1,9 +1,9 @@
 footer
   .wrapper
-    .footer__wrapper
-      .upper__footer
-        .resume
-          ul.list
+    .footer-container
+      .footer-container__upper
+        .footer-container__resume
+          ul
             li.item
               .logo
                 img(
@@ -11,8 +11,8 @@ footer
                   alt="Логотип TOXIN"
                 )
           ul
-            li.item__resume
-              p
+            li
+              p.resume-text
                 | Бронирование номеров в лучшем
                 br
                 |
@@ -20,75 +20,75 @@ footer
                 br
                 |
                 | ассоциации «Отельные взгляды»
-        .nav
+        nav.footer-container__site-map
           ul
             li
               span.title НАВИГАЦИЯ
           ul
             li
-              a.header__link(href="#!") О нас
+              a.link(href="#!") О нас
           ul
             li
-              a.header__link(href="#!") Новости
+              a.link(href="#!") Новости
           ul
             li
-              a.header__link(href="#!") Служба поддержки
+              a.link(href="#!") Служба поддержки
           ul
             li
-              a.header__link(href="#!") Услуги
-        .about
+              a.link(href="#!") Услуги
+        nav.footer-container__about
           ul
             li
               span.title О НАС
           ul
             li
-              a.header__link(href="#!") О сервисе
+              a.link(href="#!") О сервисе
           ul
             li
-              a.header__link(href="#!") Наша команда
+              a.link(href="#!") Наша команда
           ul
             li
-              a.header__link(href="#!") Вакансии
+              a.link(href="#!") Вакансии                                                                                                                                                                                                         
           ul
             li
-              a.header__link(href="#!") Инвесторы
-        .helpdesk
+              a.link(href="#!") Инвесторы
+        nav.footer-container__helpdesk
           ul
             li
               span.title СЛУЖБА ПОДДЕРЖКИ
           ul
             li
-              a.header__link(href="#!") Соглашения
+              a.link(href="#!") Соглашения
           ul
             li
-              a.header__link(href="#!") Сообщества
+              a.link(href="#!") Сообщества
           ul
             li
-              a.header__link(href="#!") Связь с нами
+              a.link(href="#!") Связь с нами
 
-        .subscription
+        .socials
           ul
             li
-              span.title ПОДПИСКА
+              span.socials__title ПОДПИСКА
           ul
-            li.item__sub
-              p
+            li
+              .socials__item
+                p
                 | Получайте специальные
                 br
                 | предложения и новости сервиса
           ul
             li
-              .subscribe__form
-                p.adds Email
+              .socials__form
+                p.socials__adds Email
                 img.arrowForwardLila(src=require("/src/assets/img/svg/arrow_forwardLila.svg"), alt="")
-  .line
-  .wrapper
-    .down__footer
-      .copyright
-        p Copyright © 2018 Toxin отель. Все права защищены.
-      .twit
-        img(src=require("/src/assets/img/svg/twit.svg"), alt="Twitter")
-      .fb
-        img(src=require("/src/assets/img/svg/fb.svg"), alt="Facebook")
-      .inst
-        img(src=require("/src/assets/img/svg/inst.svg"), alt="Instagram")
+      .footer-container__line
+      .footer-container__down
+        .footer-container__copyright
+          p Copyright © 2018 Toxin отель. Все права защищены.
+        .footer-container__twitter
+          img(src=require("/src/assets/img/svg/twit.svg"), alt="Twitter")
+        .footer-container__fb
+          img(src=require("/src/assets/img/svg/fb.svg"), alt="Facebook")
+        .footer-container__instagram
+          img(src=require("/src/assets/img/svg/inst.svg"), alt="Instagram")
