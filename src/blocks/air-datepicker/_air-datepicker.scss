@@ -11,6 +11,10 @@
     box-sizing: border-box;
     width: 100%;
     max-width: 320px;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
 }
 
 .air-datepicker{
@@ -79,6 +83,7 @@
     --adp-mobile-day-cell-height: 38px;
     --adp-mobile-month-cell-height: 48px;
     --adp-mobile-year-cell-height: 64px
+    
 }
 
 
@@ -132,3 +137,4 @@
     display:grid;
     grid-template-columns:repeat(7, var(--adp-day-cell-width))
 }
+

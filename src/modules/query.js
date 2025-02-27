@@ -19,18 +19,31 @@ new AirDatepicker('.find-form', {
 })})
 
 
-/**$(document).on('click', function(e) {
-    if (!$(e.target).closest(".input-date__click-area").length) {
-      $('.air-datepicker').hide();
-    }
-    
-  });**/
-
-
 $(document).on('click', function(e) { // событие клика по веб-документу
 	var div = $( '.find-form' ); // тут указываем ID элемента
-	if ( !div.is(e.target) // если клик был не по нашему блоку
-	    && div.has(e.target).length === 0 ) { // и не по его дочерним элементам
+	if ( !div.is(e.target) && div.has(e.target).length === 0 ) { // и не по его дочерним элементам
          $('.air-datepicker').hide(); // скрываем его
 	}
 });
+
+
+$('.box-guests').on('click', function(){
+  $(".dropdown-guests__content").show();
+    
+})
+
+$(document).on('click', function(e) { // событие клика по веб-документу
+    var div = $( '.box-guests' ); // тут указываем ID элемента
+    if ( !div.is(e.target) && div.has(e.target).length === 0 ) { // и не по его дочерним элементам
+           $('.dropdown-guests__content').hide(); // скрываем его
+  }
+});
+
+
+
+/**$(document).on('click', function(e) { // событие клика по веб-документу
+  var div = $( '.dropdown__guests-content' ); // тут указываем ID элемента
+  if ( !div.is(e.target) // если клик был не по нашему блоку
+      && div.has(e.target).length === 0 ) { // и не по его дочерним элементам
+         $('.dropdown__guests-content').hide(); // скрываем его
+  }});**/

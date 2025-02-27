@@ -6,13 +6,13 @@ main.main
           ul
             li
               .find-form__dates
-                .date__coming
+                .date-coming
                   span.title ПРИБЫТИЕ
                   input.date-box(placeholder="ДД.ММ.ГГГГ" name="arrival" required="")  
                   img.expand-coming(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
                   .input-date-click-area
                        
-                .date__leaving
+                .date-leaving
                   span.title ВЫЕЗД
                   input.date-box(placeholder="ДД.ММ.ГГГГ" name="arrival" required="")
                   img.expand-leaving(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
@@ -21,29 +21,47 @@ main.main
             li
               .find-form__guests
                 span.title ГОСТИ
-                .dropdown__guests
-                  .box__guests 
-                    p.number__guests Сколько гостей 
+                .dropdown-guests
+                  .box-guests 
+                    p.number-guests Сколько гостей 
                     img.expand(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
-                    .dropdown__guests-content
+                    .dropdown-guests__content
                       ul
                         li
-                          a.link(href="#!") Один гость
+                          .dropdown-guests__item
+                            span.title взрослые
+                            .dropdown-guests__item-control
+                              button.math-symbol -
+                              .number 1
+                              button.math-symbol +
                       ul
                         li
-                          a.link(href="#!") Два гостя
+                          .dropdown-guests__item
+                            span.title дети
+                            .dropdown-guests__item-control
+                              .math-symbol -
+                              .number 1
+                              .math-symbol +
                       ul
                         li
-                          a.link(href="#!") Три гостя
+                          .dropdown-guests__item
+                            span.title младенцы
+                            .dropdown-guests__item-control
+                              .math-symbol -
+                              .number 1
+                              .math-symbol +
                       ul
                         li
-                          a.link(href="#!") Толпа  
+                          .dropdown-guests__buttons
+                            button.clean Очистить
+                            button.apply Применить
+                      
           ul
             li
               a.personal__link(href="/")
-                .pickUpButton
-                  p.pickUpButton__title ПОДОБРАТЬ НОМЕР
-                  img.arrowForward(src=require("/src/assets/img/svg/arrow_forwardWhite.svg"), alt="")
+                .pickup-button
+                  p.pickup-button__title ПОДОБРАТЬ НОМЕР
+                  img.arrow-forward(src=require("/src/assets/img/svg/arrow_forwardWhite.svg"), alt="")
         .slogan
           p
           | Лучшие номера для вашей работы,

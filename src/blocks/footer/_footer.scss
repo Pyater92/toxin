@@ -18,14 +18,6 @@
     padding-top: 1.7rem;
 }
 
-.title {
-    white-space: nowrap;
-    font-family: "Montserrat Bold";
-    font-size: 1.2rem;
-    color: #1F2041; 
-
-}
-
 .footer-container__site-map {
     margin-right: 5.9rem;
 }
@@ -104,13 +96,30 @@
 
 .footer-container__twitter {
     margin-right: 2rem;
+    transition: transform .2s;
 }
-
 
 .footer-container__fb {
     margin-right: 2rem;
+    transition: transform .2s;
 }
 
 .footer-container__instagram {
-    margin-right: 0rem;  
+    margin-right: 0rem;
+    transition: transform .2s; 
+}
+
+.footer-container__twitter:hover {
+    transform: scale(1.2);
+    transition: transform .2s;
+}
+
+.footer-container__fb:hover {
+    transform: scale(1.2);
+    transition: transform .2s;
+}
+
+.footer-container__instagram:hover {
+    transform: scale(1.2);
+    transition: transform .2s;
 }
