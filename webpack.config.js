@@ -9,12 +9,16 @@ const devtool = devMode ? 'source-map' : 'undefined';
 
 module.exports = {
   mode: 'development',
+  entry: {
+    // define many page templates here
+    index: path.resolve(__dirname, './src/blocks/index/index.pug'),
+    uikit: path.resolve(__dirname, './src/blocks/pages/uikit/uikit.pug'),
+    landing: path.resolve(__dirname, './src/blocks/pages/landing-page/landing.pug'),
+    
+  },
   plugins: [
     new PugPlugin({
-      entry: {
-        // define many page templates here
-        index: './src/blocks/pages/landing-page/index.pug', // => dist/index.html
-      },
+      
       js: {
         // JS output filename
         filename: 'js/[name].[contenthash:8].js',
@@ -22,7 +26,8 @@ module.exports = {
       css: {
         // CSS output filename
         filename: 'css/[name].[contenthash:8].css',
-      },
+      },  
+      
     }),
   ],
 module: {

@@ -1,0 +1,27 @@
+.start-menu {
+  width: 200px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  color: aquamarine;
+}
+
+.start-menu__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.link-start {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.start-menu__items:last-child {
+  padding-top: 50px;
+  margin-bottom: 0;
+}
