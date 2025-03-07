@@ -8,8 +8,9 @@ html(lang="ru")
     link(rel="stylesheet", href="/resources/demos/style.css")
     script(src="https://code.jquery.com/jquery-3.7.1.js")
     script(src="https://code.jquery.com/ui/1.14.0/jquery-ui.js")
-    link(rel="stylesheet", href="./landing.scss")
-    script(src="../../../modules/query.js" defer="defer")
+    link(href=require('./landing.scss') rel='stylesheet')
+    
+    script(src='../../../modules/query.js' defer="defer")
     
   body
     include /src/blocks/header/header

@@ -6,19 +6,68 @@ html(lang="ru")
     title T0XIN - Бронирование номеров
     link(rel="stylesheet", href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css")
     link(rel="stylesheet", href="/resources/demos/style.css")
-    link(rel="stylesheet", href="./uikit.scss")
+    link(href=require('./uikit.scss') rel='stylesheet')
     
     
   body
-    .wrapper
-      .main
+    .ui-wrapper
         .colors
-          .colors__color
-
-          .colors__color
-          .colors__color
-          .colors__color
-          .colors__color
-          .colors__color
-          .colors__color
-        .fonts  
+          .colors__item
+            .colors__square.dark-shade-100
+            .colors__title
+              p.ui-title  Dark Shade 100%
+              p.ui-title.ui-small-title #1F2041              
+          .colors__item
+            .colors__square.dark-shade-75
+            .colors__title
+              p.ui-title Dark Shade 75%
+              p.ui-title.ui-small-title #1F2041
+          .colors__item
+            .colors__square.dark-shade-50
+            .colors__title
+              p.ui-title Dark Shade 50%
+              p.ui-title.ui-small-title #1F2041
+          .colors__item
+            .colors__square.dark-shade-25
+            .colors__title
+              p.ui-title Dark Shade 25%
+              p.ui-title.ui-small-title #1F2041
+          .colors__item
+            .colors__square.dark-shade-5
+            .colors__title
+              p.ui-title Dark Shade 5%
+              p.ui-title.ui-small-title #1F2041
+          .colors__item
+            .colors__square.purple
+            .colors__title
+              p.ui-title Purple
+              p.ui-title.ui-small-title #BC9CFF
+          .colors__item
+            .colors__square.green
+            .colors__title
+              p.ui-title Green
+              p.ui-title.ui-small-title #6FCF97
+        .fonts
+          .fonts__sign
+            .sign
+              p.sign-h1 h1
+            .sign
+              p.sign-h2 h2
+            .sign
+              p.sign-h3 h3
+            .sign
+              p.sign-body Body
+          .fonts__item
+            p.fonts__title.title-24
+              | This one is the sub-section or
+              br 
+              | widget title
+            p.fonts__title.title-19
+              | Next one is the item title inside
+              br
+              | widgets
+            p.fonts__title.title-12 This is a label or CTA text
+            p.fonts__title.title-14
+              | This is the body text which is used for most
+              br
+              | of the design, like paragraphs, lists, etc.             

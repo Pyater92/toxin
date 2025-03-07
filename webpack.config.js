@@ -11,9 +11,9 @@ module.exports = {
   mode: 'development',
   entry: {
     // define many page templates here
-    index: path.resolve(__dirname, './src/blocks/index/index.pug'),
-    uikit: path.resolve(__dirname, './src/blocks/pages/uikit/uikit.pug'),
-    landing: path.resolve(__dirname, './src/blocks/pages/landing-page/landing.pug'),
+    index:  './src/blocks/index/index.pug',
+    uikit:  './src/blocks/pages/uikit/uikit.pug',
+    landing: './src/blocks/pages/landing-page/landing.pug',
     
   },
   plugins: [

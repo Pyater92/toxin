@@ -1,18 +1,182 @@
 @use '/src/styles/normalize';
 @use '/src/styles/fonts';
+@use '/src/styles/styles';
+@use '/src/blocks/header/header';
+@use '/src/blocks/main/main';
+@use '/src/blocks/footer/footer';
 
-.wrapper {
-    
-}
 
-.main {
-    flex-direction: column
+.ui-wrapper {
+    margin-top: 14.5rem; 
+    margin-bottom: 14.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 113.226rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .colors {
-    flex-direction: column
+    display: flex;
+    flex-direction: column;
+    width: auto;    
+}
+
+.colors__item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 2rem;    
+}
+
+.colors__color:last-child {
+    padding-bottom: 0;
+}
+
+.colors__title {
+    display: flex;
+    flex-direction: column;
+}
+
+.colors__square {
+    width: 7.7rem;
+    height: 7.7rem;
+    margin-right: 4.026rem;
+    border-radius: 0.6rem;
+}
+
+.dark-shade-100 {
+    background-color: #1F2041;
+}
+
+.dark-shade-75 {
+    background-color: #1F204175;
+}
+
+.dark-shade-50 {
+    background-color: #1F204150;
+}
+
+.dark-shade-25 {
+    background-color: #1F204125;
+}
+
+.dark-shade-5 {
+    background-color: #1F204105;
+}
+
+.purple {
+    background-color: #BC9CFF;
+}
+
+.green {
+    background-color: #6FCF97;
+}
+
+.ui-title {
+    font-family: "Montserrat Bold";
+    color: #1F2041;
+    font-size: 1.9rem;
+    line-height: 2.8rem;
+}
+
+.ui-small-title {
+    font-family: "Montserrat";
 }
 
 .fonts {
-    flex-direction: column
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+}
+
+.fonts__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fonts__sign {
+    display: flex;
+    flex-direction: column;
+    margin-right: 3rem;
+    margin-top: 0.3rem;
+    
+}
+
+.sign {    
+    display: flex;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    color:#1F204125;
+    
+}
+
+.sign-h1 {
+    font-size: 2.4rem;
+    width: 2.9rem;
+    height: 3rem;
+    margin-bottom: 8.1rem;
+}
+
+.sign-h2 {
+    font-size: 1.9rem;
+    width: 2.7rem;
+    height: 2.4rem;
+    margin-bottom: 7.5rem;
+}
+
+.sign-h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    width: 1.7rem;
+    height: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+.sign-body {
+    font-size: 1.4rem;
+    text-transform: none;
+    width: 3.7rem;
+    height: 2.4rem;
+}
+
+
+.fonts__item {
+    flex-direction: column;
+}
+
+.fonts__item:last-child {
+    margin-bottom: 0;
+}
+
+.fonts__title {
+    font-family: "Montserrat Bold";
+    color: #1F2041;
+    margin-bottom: 5.1rem;
+}   
+
+.fonts__title:last-child {
+    font-family: "Montserrat";
+    margin-bottom: 0;
+    color: #1F204175;
+}   
+
+.title-24 {
+    font-size: 2.4rem;
+    line-height: 3rem;
+}
+
+.title-19 {
+    font-size: 1.9rem;
+    line-height: 2.4rem;
+}
+
+.title-12 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+.title-14 {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
 }
