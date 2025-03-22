@@ -1,0 +1,95 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title T0XIN - Бронирование номеров
+    link(rel="stylesheet", href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css")
+    link(rel="stylesheet", href="/resources/demos/style.css")
+    script(src="https://code.jquery.com/jquery-3.7.1.js")
+    script(src="https://code.jquery.com/ui/1.14.0/jquery-ui.js")
+    link(href=require('./search.scss') rel='stylesheet')    
+    script(src='../search/search.js' defer="defer")
+    
+    
+  body
+    include /src/blocks/header/header
+    main.search-page
+      .wrapper
+        .search-room-container
+          .filter
+            .find-form__guests
+              span.title даты пребывания в отеле
+              input.box-guests(placeholder="19 авг - 23 авг" name="arrival" required="")
+              img.expand-residence(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
+            .find-form__guests
+              span.title гости
+              input.box-guests(placeholder="3 гостя, 1 младенец" name="arrival" required="")
+              img.expand-residence(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
+            .find-form__range-cost.range
+              .range__headlink
+                span.title диапазон цены
+                input.range__display(type="text" readonly="" value="5 000₽ - 10 000₽")
+              .range__slider-range                
+              span.range__description Стоимость за сутки пребывания в номере
+            .find-form__rules
+              label.checkbox
+                input.checkbox__indicator(type="checkbox")
+                .checkbox__container
+                  .link Можно курить
+              label.checkbox
+                input.checkbox__indicator(type="checkbox")
+                .checkbox__container
+                  .link Можно с питомцами
+              label.checkbox
+                input.checkbox__indicator(type="checkbox")
+                .checkbox__container
+                  .link 
+                    | Можно пригласить гостей 
+                    br
+                    | (до 10 человек)
+                
+              
+                            
+              
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          .rooms  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    include /src/blocks/footer/footer

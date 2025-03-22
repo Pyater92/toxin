@@ -1,9 +1,10 @@
-import AirDatepicker from 'air-datepicker';
+import AirDatepicker from 'air-datepicker';     
 import 'air-datepicker/air-datepicker.css';
 
-$('.input-date-click-area').on('click', function(){
 
-  let button = {
+$('.find-form__click-area').on('click', function(){     // Добавляем календарь "AirDatePicker"
+
+  let button = {     // добавляем кнопку "Применить"
     content: 'Применить',
     className: 'custom-button-classname',
     onClick: (dp) => {
@@ -13,37 +14,42 @@ $('.input-date-click-area').on('click', function(){
     }
 }
 
-new AirDatepicker('.find-form', {
+new AirDatepicker('.find-form__dates', {    // добавляем кнопку "Очистить"
     range: true, multipleDatesSeparator: ' - ',
     buttons: ['clear', button]
 })})
 
 
-$(document).on('click', function(e) { // событие клика по веб-документу
-	var div = $( '.find-form' ); // тут указываем ID элемента
-	if ( !div.is(e.target) && div.has(e.target).length === 0 ) { // и не по его дочерним элементам
-         $('.air-datepicker').hide(); // скрываем его
+$(document).on('click', function(e) { // скрываем календарь "AirDatePicker"
+	var div = $( '.find-form__dates' );
+	if ( !div.is(e.target) && div.has(e.target).length === 0 ) {
+         $('.air-datepicker').hide();
 	}
 });
 
 
-$('.box-guests').on('click', function(){
-  $(".dropdown-guests__content").show();
-    
+
+
+$('.box-guests__click-area').on('click', function(){     // добавляем дропдаун + стилизация при наведении  клику
+  $(".dropdown-guests").show();
+  $(".box-guests__click-area").addClass("box-guests__click-area--hovered");
 })
 
-$(document).on('click', function(e) { // событие клика по веб-документу
-    var div = $( '.box-guests' ); // тут указываем ID элемента
-    if ( !div.is(e.target) && div.has(e.target).length === 0 ) { // и не по его дочерним элементам
-           $('.dropdown-guests__content').hide(); // скрываем его
-  }
+
+$(document).on('click', function(e) {    // скрываем дропдаун
+    var div = $( '.box-guests__click-area' );
+    if ( !div.is(e.target) && div.has(e.target).length === 0 ) {
+      $('.dropdown-guests').hide();
+      $(".box-guests__click-area").removeClass("box-guests__click-area--hovered");
+    }
 });
 
+//-----------------------------------------------------------------------------------------------------------------
 
+$(document).on('click', function(e) {
 
-/**$(document).on('click', function(e) { // событие клика по веб-документу
-  var div = $( '.dropdown__guests-content' ); // тут указываем ID элемента
-  if ( !div.is(e.target) // если клик был не по нашему блоку
-      && div.has(e.target).length === 0 ) { // и не по его дочерним элементам
-         $('.dropdown__guests-content').hide(); // скрываем его
-  }});**/
+if ($('.checkbox__mark').prop('show')) {
+  $("#registerButton").prop('disabled', false);
+} else {
+  $("#registerButton").prop('disabled', true);
+}})

@@ -13,7 +13,8 @@ module.exports = {
     // define many page templates here
     index:  './src/blocks/index/index.pug',
     uikit:  './src/blocks/pages/uikit/uikit.pug',
-    landing: './src/blocks/pages/landing-page/landing.pug',
+    landing: './src/blocks/pages/landing/landing.pug',
+    search: './src/blocks/pages/search/search.pug',
     
   },
   plugins: [

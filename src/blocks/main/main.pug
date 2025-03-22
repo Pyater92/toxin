@@ -10,22 +10,21 @@ main.main
                   span.title ПРИБЫТИЕ
                   input.date-box(placeholder="ДД.ММ.ГГГГ" name="arrival" required="")  
                   img.expand-coming(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
-                  .input-date-click-area
+                  .find-form__click-area
                        
                 .date-leaving
                   span.title ВЫЕЗД
                   input.date-box(placeholder="ДД.ММ.ГГГГ" name="arrival" required="")
                   img.expand-leaving(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
-                  .input-date-click-area
+                  .find-form__click-area
           ul
             li
               .find-form__guests
                 span.title ГОСТИ
-                .dropdown-guests
-                  .box-guests 
-                    p.number-guests Сколько гостей 
-                    img.expand(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
-                    .dropdown-guests__content
+                img.expand-guests(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
+                input.box-guests(placeholder="Сколько гостей" name="arrival" required="")
+                .box-guests__click-area
+                  .dropdown-guests
                       ul
                         li
                           .dropdown-guests__item
@@ -39,17 +38,17 @@ main.main
                           .dropdown-guests__item
                             span.title дети
                             .dropdown-guests__item-control
-                              .math-symbol -
+                              button.math-symbol -
                               .number 1
-                              .math-symbol +
+                              button.math-symbol +
                       ul
                         li
                           .dropdown-guests__item
                             span.title младенцы
                             .dropdown-guests__item-control
-                              .math-symbol -
+                              button.math-symbol -
                               .number 1
-                              .math-symbol +
+                              button.math-symbol +
                       ul
                         li
                           .dropdown-guests__buttons
@@ -58,7 +57,7 @@ main.main
                       
           ul
             li
-              a.personal__link(href="/")
+              a.personal__link(href="./search.html")
                 .pickup-button
                   p.pickup-button__title ПОДОБРАТЬ НОМЕР
                   img.arrow-forward(src=require("/src/assets/img/svg/arrow_forwardWhite.svg"), alt="")

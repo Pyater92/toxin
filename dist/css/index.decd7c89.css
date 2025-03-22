@@ -19,6 +19,7 @@
 .link-start {
   margin-left: auto;
   margin-right: auto;
+  font-size: 2rem;
 }
 
 .start-menu__items:last-child {

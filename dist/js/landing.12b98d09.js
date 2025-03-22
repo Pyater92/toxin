@@ -30,6 +30,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _air
 
 /***/ }),
 
+/***/ "./src/blocks/pages/landing/landing.js":
+/*!*********************************************!*\
+  !*** ./src/blocks/pages/landing/landing.js ***!
+  \*********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_query__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../modules/query */ \"./src/modules/query.js\");\n\n\n//# sourceURL=webpack://toxin/./src/blocks/pages/landing/landing.js?");
+
+/***/ }),
+
 /***/ "./src/modules/query.js":
 /*!******************************!*\
   !*** ./src/modules/query.js ***!
@@ -37,7 +48,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _air
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! air-datepicker */ \"./node_modules/air-datepicker/index.es.js\");\n/* harmony import */ var air_datepicker_air_datepicker_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! air-datepicker/air-datepicker.css */ \"./node_modules/air-datepicker/air-datepicker.css\");\n/* harmony import */ var air_datepicker_air_datepicker_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(air_datepicker_air_datepicker_css__WEBPACK_IMPORTED_MODULE_1__);\n\n\n$('.input-date-click-area').on('click', function () {\n  let button = {\n    content: 'Применить',\n    className: 'custom-button-classname',\n    onClick: dp => {\n      let date = new Date('2021-07-26');\n      dp.selectDate(date);\n      dp.setViewDate(date);\n    }\n  };\n  new air_datepicker__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('.find-form', {\n    range: true,\n    multipleDatesSeparator: ' - ',\n    buttons: ['clear', button]\n  });\n});\n$(document).on('click', function (e) {\n  // событие клика по веб-документу\n  var div = $('.find-form'); // тут указываем ID элемента\n  if (!div.is(e.target) && div.has(e.target).length === 0) {\n    // и не по его дочерним элементам\n    $('.air-datepicker').hide(); // скрываем его\n  }\n});\n$('.box-guests').on('click', function () {\n  $(\".dropdown-guests__content\").show();\n});\n$(document).on('click', function (e) {\n  // событие клика по веб-документу\n  var div = $('.box-guests'); // тут указываем ID элемента\n  if (!div.is(e.target) && div.has(e.target).length === 0) {\n    // и не по его дочерним элементам\n    $('.dropdown-guests__content').hide(); // скрываем его\n  }\n});\n\n/**$(document).on('click', function(e) { // событие клика по веб-документу\r\n  var div = $( '.dropdown__guests-content' ); // тут указываем ID элемента\r\n  if ( !div.is(e.target) // если клик был не по нашему блоку\r\n      && div.has(e.target).length === 0 ) { // и не по его дочерним элементам\r\n         $('.dropdown__guests-content').hide(); // скрываем его\r\n  }});**/\n\n//# sourceURL=webpack://toxin/./src/modules/query.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! air-datepicker */ \"./node_modules/air-datepicker/index.es.js\");\n/* harmony import */ var air_datepicker_air_datepicker_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! air-datepicker/air-datepicker.css */ \"./node_modules/air-datepicker/air-datepicker.css\");\n/* harmony import */ var air_datepicker_air_datepicker_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(air_datepicker_air_datepicker_css__WEBPACK_IMPORTED_MODULE_1__);\n\n\n$('.find-form__click-area').on('click', function () {\n  // Добавляем календарь \"AirDatePicker\"\n\n  let button = {\n    // добавляем кнопку \"Применить\"\n    content: 'Применить',\n    className: 'custom-button-classname',\n    onClick: dp => {\n      let date = new Date('2021-07-26');\n      dp.selectDate(date);\n      dp.setViewDate(date);\n    }\n  };\n  new air_datepicker__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('.find-form__dates', {\n    // добавляем кнопку \"Очистить\"\n    range: true,\n    multipleDatesSeparator: ' - ',\n    buttons: ['clear', button]\n  });\n});\n$(document).on('click', function (e) {\n  // скрываем календарь \"AirDatePicker\"\n  var div = $('.find-form__dates');\n  if (!div.is(e.target) && div.has(e.target).length === 0) {\n    $('.air-datepicker').hide();\n  }\n});\n$('.box-guests__click-area').on('click', function () {\n  // добавляем дропдаун + стилизация при наведении  клику\n  $(\".dropdown-guests\").show();\n  $(\".box-guests__click-area\").addClass(\"box-guests__click-area--hovered\");\n});\n$(document).on('click', function (e) {\n  // скрываем дропдаун\n  var div = $('.box-guests__click-area');\n  if (!div.is(e.target) && div.has(e.target).length === 0) {\n    $('.dropdown-guests').hide();\n    $(\".box-guests__click-area\").removeClass(\"box-guests__click-area--hovered\");\n  }\n});\n\n//# sourceURL=webpack://toxin/./src/modules/query.js?");
 
 /***/ }),
 
@@ -123,7 +134,7 @@ eval("/* extracted by HTMLBundler CSSLoader */\n\n//# sourceURL=webpack://toxin/
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/modules/query.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/blocks/pages/landing/landing.js");
 /******/ 	
 /******/ })()
 ;
