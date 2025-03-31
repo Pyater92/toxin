@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
   \*******************************/
 /***/ (function() {
 
-eval("$(function () {\n  $(\".range-cost__slider-range\").slider({\n    range: true,\n    min: 0,\n    max: 15000,\n    values: [5000, 10000],\n    slide: function (event, ui) {\n      $(\".range-cost__display\").val(ui.values[0] + \"₽ - \" + ui.values[1] + \"₽\");\n    }\n  });\n  $(\".range-cost__display\").val($(\".range-cost__display\").slider(\"values\", 0) + \" - $\" + $(\".range-cost__slider-range\").slider(\"values\", 1));\n});\n\n//# sourceURL=webpack://toxin/./src/modules/slider.js?");
+eval("$(function () {\n  $(\".range__slider-range\").slider({\n    range: true,\n    min: 0,\n    max: 15000,\n    values: [5000, 10000],\n    slide: function (event, ui) {\n      $(\".range__display\").val(ui.values[0] + \"₽ - \" + ui.values[1] + \"₽\");\n    }\n  });\n  $(\".range__display\").val($(\".range__display\").slider(\"values\", 0) + \" - $\" + $(\".range__slider-range\").slider(\"values\", 1));\n});\n\n//# sourceURL=webpack://toxin/./src/modules/slider.js?");
 
 /***/ })
 

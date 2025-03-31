@@ -1,71 +1,71 @@
 main.main
-    .wrapper
-      .main-container
-        .find-form
-          h1.find-form__title Найдём номера под ваши пожелания
-          ul
-            li
-              .find-form__dates
-                .date-coming
-                  span.title ПРИБЫТИЕ
-                  input.date-box(placeholder="ДД.ММ.ГГГГ" name="arrival" required="")  
-                  img.expand-coming(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
-                  .find-form__click-area
-                       
-                .date-leaving
-                  span.title ВЫЕЗД
-                  input.date-box(placeholder="ДД.ММ.ГГГГ" name="arrival" required="")
-                  img.expand-leaving(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
-                  .find-form__click-area
-          ul
-            li
-              .find-form__guests
-                span.title ГОСТИ
-                img.expand-guests(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
-                input.box-guests(placeholder="Сколько гостей" name="arrival" required="")
-                .box-guests__click-area
-                  .dropdown-guests
-                      ul
-                        li
-                          .dropdown-guests__item
-                            span.title взрослые
-                            .dropdown-guests__item-control
-                              button.math-symbol -
-                              .number 1
-                              button.math-symbol +
-                      ul
-                        li
-                          .dropdown-guests__item
-                            span.title дети
-                            .dropdown-guests__item-control
-                              button.math-symbol -
-                              .number 1
-                              button.math-symbol +
-                      ul
-                        li
-                          .dropdown-guests__item
-                            span.title младенцы
-                            .dropdown-guests__item-control
-                              button.math-symbol -
-                              .number 1
-                              button.math-symbol +
-                      ul
-                        li
-                          .dropdown-guests__buttons
-                            button.clean Очистить
-                            button.apply Применить
-                      
-          ul
-            li
-              a.personal__link(href="./search.html")
-                .pickup-button
-                  p.pickup-button__title ПОДОБРАТЬ НОМЕР
-                  img.arrow-forward(src=require("/src/assets/img/svg/arrow_forwardWhite.svg"), alt="")
-        .slogan
-          p
-          | Лучшие номера для вашей работы,
-          br
-          |
-          | отдыха и просто вдохновения
-          br
-          |
+      .wrapper
+        .main-container
+          .find-form
+            h1.find-form__title Найдём номера под ваши пожелания
+            ul
+              li
+                .find-form__dates
+                  .date-coming
+                    span.title ПРИБЫТИЕ
+                    input.date-box(placeholder="ДД.ММ.ГГГГ" name="arrival" required="")  
+                    img.expand-coming(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
+                    .find-form__click-area
+                        
+                  .date-leaving
+                    span.title ВЫЕЗД
+                    input.date-box(placeholder="ДД.ММ.ГГГГ" name="arrival" required="")
+                    img.expand-leaving(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
+                    .find-form__click-area
+            ul
+              li
+                .find-form__guests
+                  span.title ГОСТИ
+                  img.expand-guests(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
+                  input.box-guests(placeholder="Сколько гостей" name="arrival" required="")
+                  .guests__click-area
+                  .guests__dropdown
+                    ul
+                      li
+                        .guests__dropdown-item
+                          span.title взрослые
+                          .guests__dropdown-control
+                            button.math-symbol -
+                            .number 1
+                            button.math-symbol +
+                    ul
+                      li
+                        .guests__dropdown-item
+                          span.title дети
+                          .guests__dropdown-control
+                            button.math-symbol -
+                            .number 1
+                            button.math-symbol +
+                    ul
+                      li
+                        .guests__dropdown-item
+                          span.title младенцы
+                          .guests__dropdown-control
+                            button.math-symbol -
+                            .number 1
+                            button.math-symbol +
+                    ul
+                      li
+                        .guests__dropdown-buttons
+                          button.clean Очистить
+                          button.apply Применить
+                        
+            ul
+              li
+                a.personal__link(href="./search.html")
+                  .pickup-button
+                    p.pickup-button__title ПОДОБРАТЬ НОМЕР
+                    img.arrow-forward(src=require("/src/assets/img/svg/arrow_forwardWhite.svg"), alt="")
+          .slogan
+            p
+            | Лучшие номера для вашей работы,
+            br
+            |
+            | отдыха и просто вдохновения
+            br
+            |

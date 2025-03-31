@@ -21,13 +21,23 @@ new AirDatepicker('.find-form__dates', {    // добавляем кнопку "
 
 
 $(document).on('click', function(e) { // скрываем календарь "AirDatePicker"
-	var div = $( '.find-form__dates' );
+  var div = $( '.find-form__dates' );
   var AirDatePicker = $('.air-datepicker');
-	if ( !div.is(e.target) && div.has(e.target).length === 0 &&
+  if ( !div.is(e.target) && div.has(e.target).length === 0 &&
   !AirDatePicker.is(e.target) && AirDatePicker.has(e.target).length === 0 ) {
          $('.air-datepicker').hide();
-	}
+  }
 });
+
+
+
+
+
+
+
+
+
+
 
 
 $('.guests__click-area').on('click', function(){     // добавляем дропдаун + стилизация при наведении  клику
@@ -35,7 +45,7 @@ $('.guests__click-area').on('click', function(){     // добавляем др�
   $(".guests__click-area").addClass("guests__click-area--hovered");
 })
 
-//-----------------------------------------------------------------------------------------------------------------
+
 $(document).on('click', function(e) {    // скрываем дропдаун
   var div = $( '.guests__click-area' );
   var drpdwn = $('.guests__dropdown');
@@ -45,3 +55,23 @@ $(document).on('click', function(e) {    // скрываем дропдаун
     $(".guests__click-area").removeClass("guests__click-area--hovered");
   }
 });
+
+//------------------------------------------------------------------------------------------------------------------
+
+$('.convenience__click-area').on('click', function(){     // добавляем дропдаун + стилизация при наведении  клику
+  $(".convenience__dropdown").show();
+  $(".convenience__click-area").addClass("convenience__click-area--hovered");
+})
+
+
+$(document).on('click', function(e) {    // скрываем дропдаун
+    var div = $( '.convenience__click-area' );
+    var drpdwn = $('.convenience__dropdown');
+    if ( !div.is(e.target) && div.has(e.target).length === 0 &&
+    !drpdwn.is(e.target) && drpdwn.has(e.target).length === 0 ) {
+      $('.convenience__dropdown').hide();
+      $(".convenience__click-area").removeClass("convenience__click-area--hovered");
+    }
+});
+
+

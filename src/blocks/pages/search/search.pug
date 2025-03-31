@@ -22,10 +22,42 @@ html(lang="ru")
               span.title даты пребывания в отеле
               input.box-guests(placeholder="19 авг - 23 авг" name="arrival" required="")
               img.expand-residence(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
+              .find-form__click-area
             .find-form__guests
               span.title гости
               input.box-guests(placeholder="3 гостя, 1 младенец" name="arrival" required="")
               img.expand-residence(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
+              .guests__click-area
+              .guests__dropdown
+                      ul
+                        li
+                          .guests__dropdown-item
+                            span.title взрослые
+                            .guests__dropdown-control
+                              button.math-symbol -
+                              .number 1
+                              button.math-symbol +
+                      ul
+                        li
+                          .guests__dropdown-item
+                            span.title дети
+                            .guests__dropdown-control
+                              button.math-symbol -
+                              .number 1
+                              button.math-symbol +
+                      ul
+                        li
+                          .guests__dropdown-item
+                            span.title младенцы
+                            .guests__dropdown-control
+                              button.math-symbol -
+                              .number 1
+                              button.math-symbol +
+                      ul
+                        li
+                          .guests__dropdown-buttons
+                            button.clean Очистить
+                            button.apply Применить
             .find-form__range-cost.range
               .range__headlink
                 span.title диапазон цены
@@ -33,22 +65,79 @@ html(lang="ru")
               .range__slider-range                
               span.range__description Стоимость за сутки пребывания в номере
             .find-form__rules
-              label.checkbox
-                input.checkbox__indicator(type="checkbox")
-                .checkbox__container
-                  .link Можно курить
-              label.checkbox
-                input.checkbox__indicator(type="checkbox")
-                .checkbox__container
-                  .link Можно с питомцами
-              label.checkbox
-                input.checkbox__indicator(type="checkbox")
-                .checkbox__container
-                  .link 
-                    | Можно пригласить гостей 
-                    br
-                    | (до 10 человек)
+              span.title правила дома
+              .find-form__container
+                label.checkbox
+                  input.checkbox__indicator(type="checkbox")
+                  .checkbox__container
+                    .link Можно курить
+                label.checkbox
+                  input.checkbox__indicator(type="checkbox")
+                  .checkbox__container
+                    .link Можно с питомцами
+                label.checkbox
+                  input.checkbox__indicator(type="checkbox")
+                  .checkbox__container
+                    .link 
+                      | Можно пригласить гостей 
+                      br
+                      | (до 10 человек)
+            .find-form__accessibility
+              span.title доступность
+              .find-form__container
+                label.checkbox
+                  input.checkbox__indicator(type="checkbox")
+                  .checkbox__container
+                    .link-bold Широкий коридор
+                    .checkbox__sub-container 
+                      .link 
+                      | Ширина коридоров в номере 
+                      br
+                      | не менее 91 см.
+                label.checkbox
+                  input.checkbox__indicator(type="checkbox")
+                  .checkbox__container
+                    .link-bold Помощник для инвалидов
+                    .checkbox__sub-container  
+                      .link 
+                        | На 1 этаже вас встретит специалист  
+                        br
+                        | и проводит до номера.
+            .find-form__convenience
+              span.title удобства номера
+              input.box-guests(placeholder="2 спальни, 2 кровати..." name="arrival" required="")
+              img.expand-residence(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
+              .convenience__click-area
+              .convenience__dropdown
+                ul
+                  li
+                    .convenience__dropdown-item
+                      span.title спальни
+                      .convenience__dropdown-control
+                        button.math-symbol -
+                        .number 1
+                        button.math-symbol +
+                ul
+                  li
+                    .convenience__dropdown-item
+                      span.title кровати
+                      .convenience__dropdown-control
+                        button.math-symbol -
+                        .number 1
+                        button.math-symbol +
+                ul
+                  li
+                    .convenience__dropdown-item
+                      span.title ванные комнаты
+                      .convenience__dropdown-control
+                        button.math-symbol -
+                        .number 1
+                        button.math-symbol +
                 
+
+
+
+                  
               
                             
               

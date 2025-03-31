@@ -28,14 +28,9 @@
     margin-right: 0;
 }
 
-.link {
-    text-decoration: none;
-    color: #1F204175;
-}
-
 .navigation__expand-link {
     text-decoration: none;
-    color: #1F204175;
+    color: #1F204150;
     margin-right: 0.7rem;
 }
 
@@ -72,9 +67,7 @@
     font-size: 1.2rem;
     content: "";
     position: absolute;
-    margin: auto;
-    
-    
+    margin: auto;    
     border-radius: 3.4rem;
     z-index: 1;
     background: #fff;
@@ -83,7 +76,7 @@
 
 .sigh-in-button:hover {
     background: linear-gradient(rgba(188, 156, 255, 0.6) 0%, rgb(139, 164, 249, 0.6) 100%);
-    transition: background 0.3s; 
+    
 }
 
 .sigh-in-button__title {

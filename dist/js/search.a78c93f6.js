@@ -30,14 +30,14 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _air
 
 /***/ }),
 
-/***/ "./src/blocks/pages/landing/landing.js":
-/*!*********************************************!*\
-  !*** ./src/blocks/pages/landing/landing.js ***!
-  \*********************************************/
+/***/ "./src/blocks/pages/search/search.js":
+/*!*******************************************!*\
+  !*** ./src/blocks/pages/search/search.js ***!
+  \*******************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_query__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../modules/query */ \"./src/modules/query.js\");\n\n\n//# sourceURL=webpack://toxin/./src/blocks/pages/landing/landing.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../modules/slider */ \"./src/modules/slider.js\");\n/* harmony import */ var _modules_slider__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_slider__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _modules_query__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../modules/query */ \"./src/modules/query.js\");\n\n\n\n//# sourceURL=webpack://toxin/./src/blocks/pages/search/search.js?");
 
 /***/ }),
 
@@ -48,7 +48,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! air-datepicker */ \"./node_modules/air-datepicker/index.es.js\");\n/* harmony import */ var air_datepicker_air_datepicker_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! air-datepicker/air-datepicker.css */ \"./node_modules/air-datepicker/air-datepicker.css\");\n/* harmony import */ var air_datepicker_air_datepicker_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(air_datepicker_air_datepicker_css__WEBPACK_IMPORTED_MODULE_1__);\n\n\n$('.find-form__click-area').on('click', function () {\n  // Добавляем календарь \"AirDatePicker\"\n\n  let button = {\n    // добавляем кнопку \"Применить\"\n    content: 'Применить',\n    className: 'custom-button-classname',\n    onClick: dp => {\n      let date = new Date('2021-07-26');\n      dp.selectDate(date);\n      dp.setViewDate(date);\n    }\n  };\n  new air_datepicker__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('.find-form__dates', {\n    // добавляем кнопку \"Очистить\"\n    range: true,\n    multipleDatesSeparator: ' - ',\n    buttons: ['clear', button]\n  });\n});\n$(document).on('click', function (e) {\n  // скрываем календарь \"AirDatePicker\"\n  var div = $('.find-form__dates');\n  if (!div.is(e.target) && div.has(e.target).length === 0) {\n    $('.air-datepicker').hide();\n  }\n});\n$('.box-guests__click-area').on('click', function () {\n  // добавляем дропдаун + стилизация при наведении  клику\n  $(\".dropdown-guests\").show();\n  $(\".box-guests__click-area\").addClass(\"box-guests__click-area--hovered\");\n});\n$(document).on('click', function (e) {\n  // скрываем дропдаун\n  var div = $('.box-guests__click-area');\n  if (!div.is(e.target) && div.has(e.target).length === 0) {\n    $('.dropdown-guests').hide();\n    $(\".box-guests__click-area\").removeClass(\"box-guests__click-area--hovered\");\n  }\n});\n\n//# sourceURL=webpack://toxin/./src/modules/query.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! air-datepicker */ \"./node_modules/air-datepicker/index.es.js\");\n/* harmony import */ var air_datepicker_air_datepicker_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! air-datepicker/air-datepicker.css */ \"./node_modules/air-datepicker/air-datepicker.css\");\n/* harmony import */ var air_datepicker_air_datepicker_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(air_datepicker_air_datepicker_css__WEBPACK_IMPORTED_MODULE_1__);\n\n\n$('.find-form__click-area').on('click', function () {\n  // Добавляем календарь \"AirDatePicker\"\n\n  let button = {\n    // добавляем кнопку \"Применить\"\n    content: 'Применить',\n    className: 'custom-button-classname',\n    onClick: dp => {\n      let date = new Date('2021-07-26');\n      dp.selectDate(date);\n      dp.setViewDate(date);\n    }\n  };\n  new air_datepicker__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('.find-form__dates', {\n    // добавляем кнопку \"Очистить\"\n    range: true,\n    multipleDatesSeparator: ' - ',\n    buttons: ['clear', button]\n  });\n});\n$(document).on('click', function (e) {\n  // скрываем календарь \"AirDatePicker\"\n  var div = $('.find-form__dates');\n  if (!div.is(e.target) && div.has(e.target).length === 0) {\n    $('.air-datepicker').hide();\n  }\n});\n$('.box-guests__click-area').on('click', function () {\n  // добавляем дропдаун + стилизация при наведении  клику\n  $(\".dropdown-guests\").show();\n  $(\".box-guests__click-area\").addClass(\"box-guests__click-area--hovered\");\n});\n$(document).on('click', function (e) {\n  // скрываем дропдаун\n  var div = $('.box-guests__click-area');\n  if (!div.is(e.target) && div.has(e.target).length === 0) {\n    $('.dropdown-guests').hide();\n    $(\".box-guests__click-area\").removeClass(\"box-guests__click-area--hovered\");\n  }\n});\n\n//-----------------------------------------------------------------------------------------------------------------\n\n//# sourceURL=webpack://toxin/./src/modules/query.js?");
+
+/***/ }),
+
+/***/ "./src/modules/slider.js":
+/*!*******************************!*\
+  !*** ./src/modules/slider.js ***!
+  \*******************************/
+/***/ (function() {
+
+eval("$(function () {\n  $(\".range__slider-range\").slider({\n    range: true,\n    min: 0,\n    max: 15000,\n    values: [5000, 10000],\n    slide: function (event, ui) {\n      $(\".range__display\").val(ui.values[0] + \"₽ - \" + ui.values[1] + \"₽\");\n    }\n  });\n  $(\".range__display\").val($(\".range__display\").slider(\"values\", 0) + \" - $\" + $(\".range__slider-range\").slider(\"values\", 1));\n});\n\n//# sourceURL=webpack://toxin/./src/modules/slider.js?");
 
 /***/ }),
 
@@ -134,7 +144,7 @@ eval("/* extracted by HTMLBundler CSSLoader */\n\n//# sourceURL=webpack://toxin/
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/blocks/pages/landing/landing.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/blocks/pages/search/search.js");
 /******/ 	
 /******/ })()
 ;
