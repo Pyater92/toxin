@@ -9,7 +9,7 @@
 
 .search-room-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     padding-top: 2rem;
 }
 
@@ -203,6 +203,7 @@
 
 .find-form__convenience {
     position: relative;
+    margin-bottom: 3rem;
 }
 
 .convenience__click-area {
@@ -241,12 +242,94 @@
     background-color: #FFF;
     padding-top: 0.056rem;
     min-width: 100%;
-    height: 15.9rem;
+    height: auto;
     border: 0.1rem solid;
     border-color: #1F204175;
     border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;    
+    border-bottom-right-radius: 0.5rem;
+    padding-bottom: 0.7rem;   
     z-index: 3;
 }
 
+.rooms {
+    padding-left: 6rem;
+    padding-bottom: 7rem;
+}
 
+.rooms-list {
+    
+    padding-top: 0.3rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #1F2041;
+}
+
+.rooms-list__title {
+    margin-bottom: 2rem;
+}
+
+.rooms-item {
+    width: 27rem;
+    height: 25.7rem;
+    border-radius: 0.4rem;
+}
+
+.rooms-item__container {
+    padding: 1rem 1.7rem 1rem 2rem;
+}
+
+.rooms-item__image {
+    width: 27rem;
+    height: 15.1rem;
+}
+
+.rooms-item__image img {
+    width: 27rem;
+    height: 15.1rem;
+}
+
+.rooms-item__description {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: #1F204110 0.11rem solid;
+}
+
+.rooms-item__description-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rooms-item__room {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.rooms-item__room-number {
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin-left: 0.4rem;
+    margin-right: 0.7rem;
+}
+
+.rooms-item__room-type {
+    font-size: 1.2rem;
+    color: #BC9CFF;
+}
+
+.rooms-item__cost {
+    padding-bottom: 0.5rem;
+}
+
+.rooms-item__cost-number {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #1F204150;
+    margin-right: 0.4rem;
+}
+
+.rooms-item__cost-title {
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: #1F204150;
+}
