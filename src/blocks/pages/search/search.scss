@@ -272,6 +272,7 @@
     width: 27rem;
     height: 25.7rem;
     border-radius: 0.4rem;
+    overflow: hidden;
 }
 
 .rooms-item__container {
@@ -291,13 +292,15 @@
 .rooms-item__description {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    border-bottom: #1F204110 0.11rem solid;
+    
 }
 
 .rooms-item__description-up {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: #1F204110 0.11rem solid;
+    padding-bottom: 0.4rem;
 }
 
 .rooms-item__room {
@@ -332,4 +335,32 @@
     font-weight: normal;
     font-size: 1.2rem;
     color: #1F204150;
+}
+
+.rooms-item__description-down {
+    padding-top: 0.4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rooms-item__star {
+    margin-right: 0.35rem;
+}
+
+
+
+
+.rooms-item__review {
+    font-size: 1.4rem;    
+    color: #1F204150;
+    padding-top: 0.8rem;
+    line-height: 1.8rem;
+}
+
+.rooms-item__review-numbers {
+    font-weight: bold;
+}
+
+.rooms-item__review-title {
+    font-weight: normal;
 }
