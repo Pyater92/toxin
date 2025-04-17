@@ -32,14 +32,6 @@ $(document).on('click', function(e) { // скрываем календарь "Ai
 
 
 
-
-
-
-
-
-
-
-
 $('.guests__click-area').on('click', function(){     // добавляем дропдаун + стилизация при наведении  клику
   $(".guests__dropdown").show();
   $(".guests__click-area").addClass("guests__click-area--hovered");
@@ -74,4 +66,6 @@ $(document).on('click', function(e) {    // скрываем дропдаун
     }
 });
 
+
+//-------------------------------------------------------------------------------------------------------------------
 

@@ -1,3 +1,8 @@
+.header {
+    box-shadow: 0 10px 20px rgba(31,32,65,.05);
+    z-index: 5;
+}
+
 .header-container {
     min-height: 7rem;
     display: flex;

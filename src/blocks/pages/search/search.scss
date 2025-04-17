@@ -273,10 +273,18 @@
     height: 25.7rem;
     border-radius: 0.4rem;
     overflow: hidden;
+    box-shadow: 0 10px 20px rgba(31,32,65,.05);
+    transition: box-shadow .2s ease;
 }
+
+.rooms-item:hover {
+    box-shadow: 0 10px 30px rgba(31,32,65,.15)
+}
+
 
 .rooms-item__container {
     padding: 1rem 1.7rem 1rem 2rem;
+    
 }
 
 .rooms-item__image {
@@ -361,4 +369,156 @@
 
 .rooms-item__review-title {
     font-weight: normal;
+}
+
+
+.page-title {
+    text-align: center;
+  }
+  
+
+  //------------------------------------------------------
+.slider-container {
+    position: relative;
+    width: 27rem;
+    height: 15.1rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+  
+.slider-container__slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slider-container__slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4.2rem;
+    height: 15.1rem;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: white;
+    opacity: 0;
+  }
+  
+  
+.prev-button {
+    left: 0%;
+    transition: opacity 0.3s, 0.5s;
+    background: linear-gradient(90deg,rgba(0,0,0,.5),rgba(0,0,0,0) 99.99%,hsla(0,0%,100%,0));
+    opacity: 0;    
+    cursor: default;
+}
+
+.prev-button i {
+    cursor: pointer;
+}
+
+.prev-button:hover {
+    background: linear-gradient(90deg,rgba(0,0,0,.5),rgba(0,0,0,0) 99.99%,hsla(0,0%,100%,0));
+    opacity: 1;
+}
+
+.next-button {
+    right: 0%;
+    transition: opacity 0.3s, 0.5s;
+    background: linear-gradient(90deg,rgba(0,0,0,0),rgba(0,0,0,.5) 99.99%,hsla(0,0%,100%,0));
+    opacity: 0;    
+    cursor: default;
+  }
+
+  .next-button i {
+    cursor: pointer;
+  }
+
+.next-button:hover {
+    background: linear-gradient(90deg,rgba(0,0,0,0),rgba(0,0,0,.5) 99.99%,hsla(0,0%,100%,0));
+    opacity: 1;
+}
+
+.slider-container__slider:hover ~ .prev-button {
+    background: linear-gradient(90deg,rgba(0,0,0,.5),rgba(0,0,0,0) 99.99%,hsla(0,0%,100%,0));
+    opacity: 1;
+}
+
+.slider-container__slider:hover ~ .next-button {
+    background: linear-gradient(90deg,rgba(0,0,0,0),rgba(0,0,0,.5) 99.99%,hsla(0,0%,100%,0));
+    opacity: 1;
+}
+
+.next-button:hover ~ .prev-button {
+    background: linear-gradient(90deg,rgba(0,0,0,.5),rgba(0,0,0,0) 99.99%,hsla(0,0%,100%,0));
+    opacity: 1;
+}
+
+.prev-button:hover ~ .next-button {
+    background: linear-gradient(90deg,rgba(0,0,0,0),rgba(0,0,0,.5) 99.99%,hsla(0,0%,100%,0));
+    opacity: 1;
+}
+
+.material-icons {
+    font-family: Material Icons;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-feature-settings: "liga";
+    font-feature-settings: "liga"
+}
+
+.slider-container__slider:hover ~ .prev-button {
+    background: linear-gradient(90deg,rgba(0,0,0,.5),rgba(0,0,0,0) 99.99%,hsla(0,0%,100%,0));
+    opacity: 1;
+}
+
+.slider-container__slider:hover ~ .next-button {
+    background: linear-gradient(90deg,rgba(0,0,0,0),rgba(0,0,0,.5) 99.99%,hsla(0,0%,100%,0));
+    opacity: 1;
+}
+
+.next-button:hover ~ .prev-button {
+    background: linear-gradient(90deg,rgba(0,0,0,.5),rgba(0,0,0,0) 99.99%,hsla(0,0%,100%,0));
+    opacity: 1;
+}
+
+.prev-button:hover ~ .next-button {
+    background: linear-gradient(90deg,rgba(0,0,0,0),rgba(0,0,0,.5) 99.99%,hsla(0,0%,100%,0));
+    opacity: 1;
+}
+
+.slider-container__nav {
+    position: absolute;
+    display: flex;
+    width: 4.125rem;
+    height: 0.75rem;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    justify-content: space-between;
+    
+}
+
+.slider-container__point {
+    height: 0.75rem;
+    width: 0.75rem;
+    border-radius: 7.5rem;
+    border: solid 0.1rem #fff;
 }
