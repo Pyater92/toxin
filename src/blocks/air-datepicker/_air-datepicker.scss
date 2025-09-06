@@ -5,10 +5,10 @@
     top: 6.9rem;
     opacity:1;
     transform:none;
-    padding-top: 1.1rem;
+    padding-top: 1.3rem;
     box-sizing: border-box;
     width: 100%;
-    max-width: 320px;
+    
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
@@ -18,8 +18,8 @@
 
 .air-datepicker{
     --adp-font-family: -apple-system, BlinkMacSystemFont, "Montserrat";
-    --adp-font-size: 12px;
-    --adp-width: 246px;
+    --adp-font-size: 1.2rem;
+    --adp-width: 24.6rem;
     --adp-z-index: 100;
     --adp-padding: 1.8rem;
     --adp-grid-areas: "nav" "body" "timepicker" "buttons";
@@ -44,19 +44,19 @@
     --adp-border-color-inner: #efefef;
     --adp-border-radius: 4hpx;
     --adp-border-color-inline: #d7d7d7;
-    --adp-nav-height: 32px;
+    --adp-nav-height: 3.2rem;
     --adp-nav-arrow-color: #BC9CFF;
-    --adp-nav-action-size: 32px;
+    --adp-nav-action-size: 3.2rem;
     --adp-nav-color-secondary: var(--adp-color-secondary);
     --adp-day-name-color: #BC9CFF;
     --adp-day-name-color-hover: #8ad5f4;
     --adp-day-cell-width: 4rem;
     --adp-day-cell-height: 4rem;
-    --adp-month-cell-height: 42px;
-    --adp-year-cell-height: 56px;
-    --adp-pointer-size: 10px;
-    --adp-poiner-border-radius: 2px;
-    --adp-pointer-offset: 14px;
+    --adp-month-cell-height: 4.2rem;
+    --adp-year-cell-height: 5.6rem;
+    --adp-pointer-size: 1rem;
+    --adp-poiner-border-radius: 0.2rem;
+    --adp-pointer-offset: 1.4rem;
     --adp-cell-border-radius: 50%;
     --adp-cell-background-color-hover: #f0f0f0;
     --adp-cell-background-color-selected: linear-gradient(#BC9CFF 0%, #8BA4F9 100%);
@@ -64,24 +64,24 @@
     --adp-cell-background-color-in-range: linear-gradient(#BC9CFF50 0%, #8BA4F950 100%);
     --adp-cell-background-color-in-range-hover: linear-gradient(#BC9CFF50 0%, #8BA4F950 100%);
     --adp-cell-border-color-in-range: var(--adp-cell-background-color-selected);
-    --adp-btn-height: 32px;
+    --adp-btn-height: 3.2rem;
     --adp-btn-color: var(--adp-accent-color);
     --adp-btn-color-hover: var(--adp-color);
     --adp-btn-border-radius: var(--adp-border-radius);
     --adp-btn-background-color-hover: var(--adp-background-color-hover);
     --adp-btn-background-color-active: var(--adp-background-color-active);
-    --adp-time-track-height: 1px;
+    --adp-time-track-height: 0.1rem;
     --adp-time-track-color: #dedede;
     --adp-time-track-color-hover: #b1b1b1;
-    --adp-time-thumb-size: 12px;
-    --adp-time-padding-inner: 10px;
+    --adp-time-thumb-size: 1.2rem;
+    --adp-time-padding-inner: 1rem;
     --adp-time-day-period-color: var(--adp-color-secondary);
-    --adp-mobile-font-size: 16px;
-    --adp-mobile-nav-height: 40px;
-    --adp-mobile-width: 320px;
-    --adp-mobile-day-cell-height: 38px;
-    --adp-mobile-month-cell-height: 48px;
-    --adp-mobile-year-cell-height: 64px
+    --adp-mobile-font-size: 1.6rem;
+    --adp-mobile-nav-height: 4rem;
+    --adp-mobile-width: 3.2rem;
+    --adp-mobile-day-cell-height: 3.8rem;
+    --adp-mobile-month-cell-height: 4.8rem;
+    --adp-mobile-year-cell-height: 6.4rem
     
 }
 

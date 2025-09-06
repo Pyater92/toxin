@@ -11,6 +11,7 @@
     display: flex;
     align-items: flex-start;       
     justify-content: space-between;
+    
 }
 
 .slogan {
@@ -39,6 +40,7 @@
     color: #1F2041;
 }
 
+
 .find-form__dates {
     position: relative;
     display: flex;
@@ -46,10 +48,15 @@
     justify-content: space-between;
     margin-bottom: 2rem;
     margin-right: 2rem;
+    width: 100%;
 }
 
 .find-form__dates:last-child {
     margin-right: 0;
+}
+
+.test {
+    display: block;
 }
 
 .date-box {

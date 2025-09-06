@@ -1,4 +1,4 @@
-import AirDatepicker from 'air-datepicker';     
+/* import AirDatepicker from 'air-datepicker';     
 import 'air-datepicker/air-datepicker.css';
 
 
@@ -47,7 +47,7 @@ $(document).on('click', function(e) {    // скрываем дропдаун
     $(".guests__click-area").removeClass("guests__click-area--hovered");
   }
 });
-
+*/
 //------------------------------------------------------------------------------------------------------------------
 
 $('.convenience__click-area').on('click', function(){     // добавляем дропдаун + стилизация при наведении  клику

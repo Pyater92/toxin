@@ -9,6 +9,7 @@
     align-items: center;    
     justify-content: space-between;
     
+    
 }
 
 
@@ -39,14 +40,14 @@
     margin-right: 0.7rem;
 }
 
-.header-main__navigation {
+.header__navigation-site {
     display: flex;
     align-items: center;    
     justify-content: space-between;
     margin-right: 2rem;  
 }
 
-.header-main__navigation:last-child {
+.header__navigation-site:last-child {
     margin-right: 0;
 }
 
@@ -106,4 +107,16 @@
 .sigh-up-button:hover {
     opacity: 0.6;
     transition: opacity 0.3s, color 1s;
+}
+
+@media (max-width: 1920px) {
+    .header__navigati {
+        display: none;
+    }
+}
+
+@media (max-width: 320px) {
+    .header__navigation-site {
+        display: none;
+    }
 }

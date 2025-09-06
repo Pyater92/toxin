@@ -1,9 +1,9 @@
 header.header
   .wrapper
     .header-container
-      a(href="#") 
+      a.no-click-link(href="./landing.html")
         img(src=require("/src/assets/img/svg/toxin_logo.svg"), alt="Логотип TOXIN") 
-      nav.header-main__navigation
+      nav.header__navigation-site
         ul.navigation__list
           li.navigation__item
             a.link(href="#!") О нас
@@ -27,4 +27,7 @@ header.header
             a.link(href="/")
               .sigh-up-button
                 p.sigh-up-button__title ЗАРЕГИСТРИРОВАТЬСЯ
+      nav.header__navigation-mobile
+
+      
               

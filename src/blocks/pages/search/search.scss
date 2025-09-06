@@ -27,6 +27,13 @@
     
 }
 
+.filter .find-form__dates
+
+.container-search {
+    width: 100%;
+    padding-bottom: 1.1rem;
+    height: 4.4rem;
+}
 
 .dates-residence {
     display: flex;
@@ -262,10 +269,19 @@
     font-size: 2.4rem;
     font-weight: bold;
     color: #1F2041;
+    margin: 4rem;
 }
 
 .rooms-list__title {
     margin-bottom: 2rem;
+    font-family: Quicksand, Open Sans, Arial, serif;
+}
+
+.rooms-list__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem;
+    column-gap: 1.2rem;
 }
 
 .rooms-item {
@@ -466,7 +482,8 @@
     opacity: 1;
 }
 
-.material-icons {
+.material-icons, 
+.arrow-forward {
     font-family: Material Icons;
     font-weight: 400;
     font-style: normal;
@@ -521,4 +538,71 @@
     width: 0.75rem;
     border-radius: 7.5rem;
     border: solid 0.1rem #fff;
+}
+
+//---------------------------------------------------------------------------------------------------
+
+.pagination {
+    margin-left: auto;
+    margin-right: auto;
+    width: 24.1rem;
+    
+}
+
+.pagination__pages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+.pagination__first-page {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+    border: none;
+    background: linear-gradient(#BC9CFF 0%, #8BA4F9 100%);
+    color: #fff;
+}
+
+.pagination__page {
+    display: flex;
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    background-color: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+
+}
+
+.pagination__page:hover {
+    background-color: #1F204115;
+}
+
+.pagination__page:focus {
+    border: 0.1rem solid #BC9CFF;    
+}
+
+.pagination__last-page {
+    position: relative;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    background: linear-gradient(#6FCF97 0%, #66D2EA 100%);
+    color: #fff;
+    border-radius: 2rem;
+    border: none;
+    width: 4rem;
+    height: 4rem;
+}
+
+.arrow-forward {
+    position: absolute;
+    left: 0.9rem;
+    bottom: 0.8rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    
 }

@@ -8,15 +8,18 @@ $('.find-form__click-area').on('click', function(){     // Добавляем к
     content: 'Применить',
     className: 'custom-button-classname',
     onClick: (dp) => {
-        let date = new Date('2021-07-26');
-        dp.selectDate(date);
-        dp.setViewDate(date);
+        let firstdate = document.querySelector('.air-datepicker-cell.-range-from')
+        let lastdate = document.querySelector('.air-datepicker-cell.-range-to')
+        //new Date('2021-07-26');
+        dp.selectDate(firstdate);
+        dp.setViewDate(lastdate);
     }
 }
 
 new AirDatepicker('.find-form__dates', {    // добавляем кнопку "Очистить"
     range: true, multipleDatesSeparator: ' - ',
-    buttons: ['clear', button]
+    minDate: Date.now(),
+    buttons: [button, 'clear']
 })})
 
 
