@@ -1,33 +1,33 @@
 header.header
   .wrapper
-    .header-container
-      a.no-click-link(href="./landing.html")
-        img(src=require("/src/assets/img/svg/toxin_logo.svg"), alt="Логотип TOXIN") 
-      nav.header__navigation-site
-        ul.navigation__list
-          li.navigation__item
-            a.link(href="#!") О нас
-          li.navigation__item
-            a.navigation__expand-link(href="#!") Услуги
-            a.link(href="#!")
-              img(src=require("/src/assets/img/svg/expand_more.svg"), alt="") 
-          li.navigation__item
-            a.link(href="#!") Вакансии
-          li.navigation__item
-            a.link(href="#!") Новости
-          li.navigation__item
-            a.navigation__expand-link(href="#!") Соглашения
-            a.link(href="#!")
-              img(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
-          li.navigation__item
-            a.link(href="/")
-              .sigh-in-button
-                p.sigh-in-button__title ВОЙТИ
-          li.navigation__item
-            a.link(href="/")
-              .sigh-up-button
-                p.sigh-up-button__title ЗАРЕГИСТРИРОВАТЬСЯ
-      nav.header__navigation-mobile
+    .header-container      
+      .container-logo
+        a.no-click-link(href="./landing.html")
+          img(src=require("/src/assets/img/svg/toxin_logo.svg"), alt="Логотип TOXIN") 
+      
+      .navigation__item
+        a.link(href="#!") О нас
+      .navigation__item
+        a.navigation__expand-link(href="#!") Услуги
+        a.link(href="#!")
+          img(src=require("/src/assets/img/svg/expand_more.svg"), alt="") 
+      .navigation__item
+        a.link(href="#!") Вакансии
+      .navigation__item
+        a.link(href="#!") Новости
+      .navigation__item
+        a.navigation__expand-link(href="#!") Соглашения
+        a.link(href="#!")
+          img(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
+      .navigation__item
+        a.link(href="/")
+          .sigh-in-button
+            p.sigh-in-button__title ВОЙТИ
+      .navigation__item
+        a.link(href="/")
+          .sigh-up-button
+            p.sigh-up-button__title ЗАРЕГИСТРИРОВАТЬСЯ
+      .header__navigation-mobile
 
       
               
