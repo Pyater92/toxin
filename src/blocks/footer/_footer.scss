@@ -1,50 +1,81 @@
 .footer-container__upper {
-    padding-top: 10.4rem;
-    padding-bottom: 10rem;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
     display: flex;
     align-items: start;    
     justify-content: space-between;
-    line-height: 2.8;
+    line-height: 1.2rem;
     white-space: nowrap;
+    
 }
 
 .footer-container__resume {
-    padding-top: 1rem;
-    margin-right: 3.8rem;
+    margin-right: 4.05%;
     line-height: 2.4rem;
+    
 }
 
 .resume-text {
+    color: #1F2041BF;
     padding-top: 1.7rem;
 }
 
 .footer-container__site-map {
-    margin-right: 5.9rem;
+    padding-top: 0.4rem;
+    display: grid;
+    align-items: start;
+    margin-right: 4.975%;
+    line-height: normal;
+}
+
+.footer-nav > :first-child{
+    margin-bottom: 2.1rem;
+}
+
+.footer-nav .link {
+    margin-bottom: 2rem;
 }
 
 .footer-container__about {
-    margin-right: 9.2rem;
+    padding-top: 0.4rem;
+    display: grid;
+    align-items: start;
+    margin-right: 7.9%;
+    line-height: normal;
 }
 
 .footer-container__helpdesk {
-    margin-right: 5.1rem;
+    padding-left: 0.1rem;
+    padding-top: 0.4rem;
+    display: grid;
+    align-items: start;
+    margin-right: 4.4%;
+    line-height: normal;
 }
 
 .socials {
-    
+    display: grid;
+    align-items: start;
+    line-height: normal;
+    padding-left: 0.1rem;
+    padding-top: 0.4rem;
     color: #1F2041BF;
+}
+
+.socials .title {
+    margin-bottom: 1.8rem;
 }
 
 .socials__title {
     font-family: "Montserrat Bold";
     font-size: 1.2rem;
-    color: #1F2041;
+    
     
 }
 
 
 .socials__item {
-    margin-top: 0.4rem;
+    
     line-height: 2.4rem;
 }
 
@@ -56,7 +87,7 @@
 
 
 .socials__form {
-    margin-top: 2rem;
+    margin-top: 2.3rem;
     position: relative;
     display: flex;
     justify-content: center;
@@ -64,21 +95,24 @@
     width: 26rem;
     height: 4.4rem;
     border: 0.1rem solid;
-    border-color: #E5E5E5;
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+    border-color: #1F204140;
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
 
 .socials__adds {
+    color: #1F204150;
     position: absolute;
-    left: 1.5rem;
+    top: 1.015rem;
+    left: 1.4rem;
 }
 
 .footer-container__down {
+    padding-right: 0.2rem;
     min-height: 7rem;
     display: flex;
     align-items: center;    
@@ -86,7 +120,7 @@
 }
 
 .footer-container__copyright {
-    margin-right: 67.6rem;
+    margin-right: auto;
     color: #1F2041BF;
 }
 
@@ -95,17 +129,16 @@
 }
 
 .footer-container__twitter {
-    margin-right: 2rem;
     transition: transform .2s;
 }
 
 .footer-container__fb {
-    margin-right: 2rem;
+    margin-left: 1.77%;
     transition: transform .2s;
 }
 
 .footer-container__instagram {
-    margin-right: 0rem;
+    margin-left: 1.92%;
     transition: transform .2s; 
 }
 

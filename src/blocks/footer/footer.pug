@@ -3,15 +3,12 @@ footer
     .footer-container
       .footer-container__upper
         .footer-container__resume
-          ul
-            li.item
+            .item
               .logo
-                img(
-                  src=require("/src/assets/img/svg/toxin_logo.svg"),
-                  alt="Логотип TOXIN"
-                )
-          ul
-            li
+                  img(
+                    src=require("/src/assets/img/svg/toxin_logo.svg"),
+                    alt="Логотип TOXIN"
+                  )          
               p.resume-text
                 | Бронирование номеров в лучшем
                 br
@@ -20,75 +17,41 @@ footer
                 br
                 |
                 | ассоциации «Отельные взгляды»
-        nav.footer-container__site-map
-          ul
-            li
-              span.title НАВИГАЦИЯ
-          ul
-            li
-              a.link(href="#!") О нас
-          ul
-            li
-              a.link(href="#!") Новости
-          ul
-            li
-              a.link(href="#!") Служба поддержки
-          ul
-            li
-              a.link(href="#!") Услуги
-        nav.footer-container__about
-          ul
-            li
-              span.title О НАС
-          ul
-            li
-              a.link(href="#!") О сервисе
-          ul
-            li
-              a.link(href="#!") Наша команда
-          ul
-            li
-              a.link(href="#!") Вакансии                                                                                                                                                                                                         
-          ul
-            li
-              a.link(href="#!") Инвесторы
-        nav.footer-container__helpdesk
-          ul
-            li
-              span.title СЛУЖБА ПОДДЕРЖКИ
-          ul
-            li
-              a.link(href="#!") Соглашения
-          ul
-            li
-              a.link(href="#!") Сообщества
-          ul
-            li
-              a.link(href="#!") Связь с нами
-
-        .socials
-          ul
-            li
-              span.socials__title ПОДПИСКА
-          ul
-            li
-              .socials__item
+        nav.footer-container__site-map.footer-nav
+            span.title НАВИГАЦИЯ
+            a.link(href="#!") О нас
+            a.link(href="#!") Новости
+            a.link(href="#!") Служба поддержки
+            a.link(href="#!") Услуги          
+        nav.footer-container__about.footer-nav
+            span.title О НАС
+            a.link(href="#!") О сервисе
+            a.link(href="#!") Наша команда
+            a.link(href="#!") Вакансии
+            a.link(href="#!") Инвесторы          
+        nav.footer-container__helpdesk.footer-nav
+            span.title СЛУЖБА ПОДДЕРЖКИ
+            a.link(href="#!") Соглашения
+            a.link(href="#!") Сообщества
+            a.link(href="#!") Связь с нами          
+        .socials.footer-nav
+            span.title ПОДПИСКА
+            .socials__item
                 p
                 | Получайте специальные
                 br
-                | предложения и новости сервиса
-          ul
-            li
-              .socials__form
+                | предложения и новости сервиса        
+            .socials__form
                 p.socials__adds Email
                 img.arrowForwardLila(src=require("/src/assets/img/svg/arrow_forwardLila.svg"), alt="")
-      .footer-container__line
-      .footer-container__down
-        .footer-container__copyright
-          p Copyright © 2018 Toxin отель. Все права защищены.
-        .footer-container__twitter
-          img(src=require("/src/assets/img/svg/twit.svg"), alt="Twitter")
-        .footer-container__fb
-          img(src=require("/src/assets/img/svg/fb.svg"), alt="Facebook")
-        .footer-container__instagram
-          img(src=require("/src/assets/img/svg/inst.svg"), alt="Instagram")
+  .footer-container__line
+  .wrapper
+    .footer-container__down
+       .footer-container__copyright
+         p Copyright © 2018 Toxin отель. Все права защищены.
+       .footer-container__twitter
+         img(src=require("/src/assets/img/svg/twit.svg"), alt="Twitter")
+       .footer-container__fb
+         img(src=require("/src/assets/img/svg/fb.svg"), alt="Facebook")
+       .footer-container__instagram
+         img(src=require("/src/assets/img/svg/inst.svg"), alt="Instagram")

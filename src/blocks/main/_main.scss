@@ -3,8 +3,8 @@
     height: 90rem;
     background: url(/src/assets/img/image-bg.jpg) no-repeat center;
     background-size: cover;
-    background-position: -1rem 0;
-    padding-bottom: 1.9rem;
+    background-position: 0 0;
+    
 }
 
 .main-container {
@@ -13,6 +13,7 @@
     display: flex;
     align-items: flex-start;       
     justify-content: space-between;
+    padding-bottom: 2.2rem;
     
 }
 
@@ -23,23 +24,35 @@
 }
 
 .find-form {
+    display: grid;
+    border-radius: 0.3rem;
     width: 38rem;
     height: 37.4rem;
     background-color: white;
     align-self: start;
     position: relative;
-    padding-top: 4rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-bottom: 3rem;
+    //padding-left: 7.9%;
+    //padding-right: 7.9%;
+    //padding-top: 4rem;
+    //padding-left: 3rem;
+    //padding-right: 3rem;
+    //padding-bottom: 3rem;
+}
+
+.find-form__wrapper {
+    width: auto;
+    margin: 4rem 7.9% 3rem 7.9%;
 }
 
 .find-form__title {
+
     font-size: 2.4rem;
     line-height: normal;
     font-family: 'Montserrat Bold';
-    margin-bottom: 2.1rem;
+    margin-bottom: 2.15rem;
     color: #1F2041;
+    line-height: normal;
+     
 }
 
 
@@ -49,8 +62,8 @@
     align-items: center;    
     justify-content: space-between;
     margin-bottom: 2rem;
-    margin-right: 2rem;
-    width: 100%;
+    
+    
 }
 
 .find-form__dates:last-child {
@@ -61,10 +74,20 @@
     display: block;
 }
 
-.date-box {
+.date-coming {     
     position: relative;
-    display: flex;
+    
     align-items: center;    
+}
+
+.date-leaving {
+    position: relative;
+    margin-right: 2rem;
+    align-items: center;    
+}
+
+.date-box {
+    display: flex;
     justify-content: space-between;
     width: 15rem;
     height: 4.4rem;
@@ -74,25 +97,21 @@
     border-bottom-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
-    margin-top: 0.5rem;
-    padding-left: 1.5rem;
+    margin-top: 0.65rem;
+    padding-bottom: 0.2rem;
+    padding-left: 1.4rem;
+    
+    
     
 }
 
-
-.date-coming {    
-    position: relative;
-    margin-right: 2rem;    
-}
-
-.date-leaving {
-    position: relative;
+.date-coming .date-box {
     margin-right: 2rem;
 }
 
 .expand-coming {
     position: absolute;
-    left: 12rem;
+    left: 12.15rem;
     top: 3.9rem;
     margin-right: -0.5rem;
     
@@ -100,7 +119,7 @@
 
 .expand-leaving {
     position: absolute;
-    left: 12rem;
+    left: 12.15rem;
     top: 3.9rem;
     margin-right: -0.5rem;
     
@@ -114,22 +133,21 @@
 
 .expand-guests {
     position: absolute;
-    left: 29rem;
-    bottom: 1.7rem;    
+    left: 29.1rem;
+    bottom: 1.78rem;    
 }
 
 
 .find-form__click-area {
+    
     position: absolute;     
     border: 0.1rem solid;
-    border-color: #E5E5E5;
+    border-color: #1F204140;
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
-    position: absolute;
-    top: 1.9rem;
-    bottom: 0;
+    top: 2.015rem;
     left: 0;
     right: 0;    
     width: 100%;
@@ -146,7 +164,12 @@
 
 .find-form__guests {
     position: relative;
-    margin-bottom: 3.044rem;
+    padding-top: 0.1rem;
+    margin-bottom: 3.1rem;
+}
+
+.date-coming .find-form__click-area {
+    width: 15rem;
 }
 
 .box-guests {
@@ -161,8 +184,8 @@
     border-bottom-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
-    margin-top: 0.5rem;    
-    padding-left: 1.5rem;
+    margin-top: 0.6rem;    
+    padding-left: 1.4rem;
     transition: border-color 0.3s, color 1s;
     
     
@@ -178,17 +201,13 @@
 .guests__click-area {
     position: absolute;
     border: 0.1rem solid;
-    border-color: #E5E5E5;
+    border-color: #1F204140;
     width: 100%;
     height: 4.4rem;
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+    border-radius: 0.3rem;
     transition: border-color 0.3s, color 1s;
-    bottom: 0rem;
-    
- 
+    top: 2.05rem;
+     
 }
 
 .guests__click-area:hover {
@@ -224,6 +243,11 @@
     transition: opacity 0.3s, color 1s;
 }
 
+.pickup-button__title {
+    padding-top: 0.2rem;
+    padding-right: 0.35rem;
+}
+
 .arrow-forward {
     position: absolute;
     right: 1.2rem;
@@ -241,7 +265,7 @@
     left: 0rem;
     background-color: #FFF;
     padding-top: 0.056rem;
-    min-width: 100%;
+    width: 84.2%;
     height: 15.9rem;
     border: 0.1rem solid;
     border-color: #1F204175;
