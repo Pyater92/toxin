@@ -110,6 +110,7 @@
 }
 
 .air-datepicker--buttons {
+  
     border-top:none;
     padding: 0;    
 }
@@ -121,11 +122,15 @@
 .air-datepicker-button span{
     outline:none;
     align-items:center;
-    justify-content:center;
+    justify-content:start;
     width:100%;height:100%; 
     color: #BC9CFF; 
     text-transform: uppercase;
     font-family:"Montserrat Bold" ;
+}
+
+.air-datepicker-button span:last-child {
+     justify-content:end;                                                                                                                                               
 }
 
 .air-datepicker--content{

@@ -23,6 +23,7 @@ new AirDatepicker('.find-form__dates', {    // добавляем кнопку "
 })})
 
 
+
 $(document).on('click', function(e) { // скрываем календарь "AirDatePicker"
 	var div = $( '.find-form__dates' );
   var AirDatePicker = $('.air-datepicker');
@@ -32,6 +33,7 @@ $(document).on('click', function(e) { // скрываем календарь "Ai
 	}
 });
 
+//-----------------------------------------------------------------------------------------------------------
 
 $('.guests__click-area').on('click', function(){     // добавляем дропдаун + стилизация при наведении  клику
   $(".guests__dropdown").show();

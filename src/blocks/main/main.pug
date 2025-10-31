@@ -8,40 +8,41 @@ main.main
                 .date-coming
                   span.title ПРИБЫТИЕ
                   input.date-box(placeholder="ДД.ММ.ГГГГ" name="arrival" required="")  
-                  img.expand-coming(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
-                  .find-form__click-area                    
+                  .find-form__click-area
+                    img.expand-coming(src=require("/src/assets/img/svg/expand_more.svg"), alt="")                    
                 .date-leaving
                   span.title ВЫЕЗД
                   input.date-box(placeholder="ДД.ММ.ГГГГ" name="arrival" required="")
-                  img.expand-leaving(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
-                  .find-form__click-area        
+                  .find-form__click-area
+                    img.expand-leaving(src=require("/src/assets/img/svg/expand_more.svg"), alt="")        
               .find-form__guests
                 span.title ГОСТИ
-                img.expand-guests(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
-                input.box-guests(placeholder="Сколько гостей" name="arrival" required="")
+                input.box-guests.box-guests__landing-page(placeholder="Сколько гостей" name="arrival" required="")
                 .guests__click-area
+                  img.expand-guests(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
                 .guests__dropdown
-                  .guests__dropdown-item
-                    span.title взрослые
-                    .guests__dropdown-control
-                      button.math-symbol -
-                      .number 1
-                      button.math-symbol +
+                  .guests__dropdown-container
                     .guests__dropdown-item
-                        span.title дети
-                        .guests__dropdown-control
-                          button.math-symbol -
-                          .number 1
-                          button.math-symbol +
-                  .guests__dropdown-item
-                    span.title младенцы
-                    .guests__dropdown-control
-                      button.math-symbol -
-                      .number 1
-                      button.math-symbol +
-                  .guests__dropdown-buttons
-                    button.clean Очистить
-                    button.apply Применить
+                      span.title взрослые
+                      .guests__dropdown-control
+                        button.math-symbol -
+                        .number 0
+                        button.math-symbol +
+                    .guests__dropdown-item
+                          span.title дети
+                          .guests__dropdown-control
+                            button.math-symbol -
+                            .number 0
+                            button.math-symbol +
+                    .guests__dropdown-item
+                      span.title младенцы
+                      .guests__dropdown-control
+                        button.math-symbol -
+                        .number 0
+                        button.math-symbol +
+                    .guests__dropdown-buttons
+                      button.clean Очистить
+                      button.apply Применить
               a.personal__link(href="./search.html")
                 .pickup-button
                   .pickup-button__title ПОДОБРАТЬ НОМЕР

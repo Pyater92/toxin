@@ -21,14 +21,14 @@ html(lang="ru")
           .filter
             .find-form__dates.test
               span.title даты пребывания в отеле
-              input.box-guests(placeholder="19 авг - 23 авг" name="arrival" required="")
-              img.expand-residence(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
-              .find-form__click-area
+              input.box-guests.box-guests__landing-page(placeholder="19 авг - 23 авг" name="arrival" required="")
+              .find-form__click-area.find-form__click-area__search-page
+                img.expand-residence(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
             .find-form__guests
               span.title гости
-              input.box-guests(placeholder="3 гостя, 1 младенец" name="arrival" required="")
-              img.expand-residence(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
-              .guests__click-area
+              input.box-guests.box-guests__search-page(placeholder="3 гостя, 1 младенец" name="arrival" required="")
+              .guests__click-area.guests__click-area__search-page
+                img.expand-residence(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
               .guests__dropdown
                       ul
                         li
@@ -164,439 +164,451 @@ html(lang="ru")
           .rooms
             .rooms-list
               h3.rooms-list__title Номера, которые мы для вас подобрали
-              .rooms-list__container
-                .rooms-item
-                  .rooms-item__image
-                    .slider-container                          
-                      .slider-container__slider
-                        img.slide-img(src=require('/src/assets/img/888.jpg'))
-                        img.slide-img(src=require('/src/assets/img/888-2.jpg'))    
-                        img.slide-img(src=require('/src/assets/img/888-3.jpg'))
-                        img.slide-img(src=require('/src/assets/img/888-2.jpg'))
-                      button.prev-button(aria-label='Посмотреть предыдущий слайд')
-                        i.material-icons navigate_before
-                      button.next-button(aria-label='Посмотреть следующий слайд')
-                        i.material-icons navigate_next
-                      .slider-container__nav
-                        .slider-container__point
-                        .slider-container__point
-                        .slider-container__point
-                        .slider-container__point
-                  .rooms-item__container
-                    .rooms-item__description
-                      .rooms-item__description-up
-                        p.rooms-item__room №
-                          span.rooms-item__room-number 888
-                          span.rooms-item__room-type люкс
-                        p.rooms-item__cost
-                          span.rooms-item__cost-number 9 990₽
-                          span.rooms-item__cost-title в сутки
-                      .rooms-item__description-down
-                        p.rooms-item__stars
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                        p.rooms-item__review 
-                          span.rooms-item__review-numbers 145 
-                          span.rooms-item__review-title Отзывов
-                .rooms-item
-                  .rooms-item__image
-                    .slider-container                          
-                      .slider-container__slider
-                        img.slide-img(src=require('/src/assets/img/840.jpg'))
-                        img.slide-img(src=require('/src/assets/img/840.jpg'))    
-                        img.slide-img(src=require('/src/assets/img/840.jpg'))
-                        img.slide-img(src=require('/src/assets/img/840.jpg'))
-                      button.prev-button(aria-label='Посмотреть предыдущий слайд')
-                        i.material-icons navigate_before
-                      button.next-button(aria-label='Посмотреть следующий слайд')
-                        i.material-icons navigate_next
-                      .slider-container__nav
-                        .slider-container__point
-                        .slider-container__point
-                        .slider-container__point
-                        .slider-container__point
-                  .rooms-item__container
-                    .rooms-item__description
-                      .rooms-item__description-up
-                        p.rooms-item__room №
-                          span.rooms-item__room-number 840
-                          span.rooms-item__room-type
-                        p.rooms-item__cost
-                          span.rooms-item__cost-number 9 990₽
-                          span.rooms-item__cost-title в сутки
-                      .rooms-item__description-down
-                        p.rooms-item__stars
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star_empty.svg") alt="")
-                        p.rooms-item__review 
-                          span.rooms-item__review-numbers 65 
-                          span.rooms-item__review-title Отзывов
-                .rooms-item
-                  .rooms-item__image
-                    .slider-container                          
-                      .slider-container__slider
-                        img.slide-img(src=require('/src/assets/img/980.jpg'))
-                        img.slide-img(src=require('/src/assets/img/980.jpg'))    
-                        img.slide-img(src=require('/src/assets/img/980.jpg'))
-                        img.slide-img(src=require('/src/assets/img/980.jpg'))
-                      button.prev-button(aria-label='Посмотреть предыдущий слайд')
-                        i.material-icons navigate_before
-                      button.next-button(aria-label='Посмотреть следующий слайд')
-                        i.material-icons navigate_next
-                      .slider-container__nav
-                        .slider-container__point
-                        .slider-container__point
-                        .slider-container__point
-                        .slider-container__point
-                  .rooms-item__container
-                    .rooms-item__description
-                      .rooms-item__description-up
-                        p.rooms-item__room №
-                          span.rooms-item__room-number 980
-                          span.rooms-item__room-type люкс
-                        p.rooms-item__cost
-                          span.rooms-item__cost-number 8 500₽
-                          span.rooms-item__cost-title в сутки
-                      .rooms-item__description-down
-                        p.rooms-item__stars
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star_empty.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star_empty.svg") alt="")
-                        p.rooms-item__review 
-                          span.rooms-item__review-numbers 35 
-                          span.rooms-item__review-title Отзывов
-                .rooms-item
-                  .rooms-item__image
-                    .slider-container                          
-                      .slider-container__slider
-                        img.slide-img(src=require('/src/assets/img/856.jpg'))
-                        img.slide-img(src=require('/src/assets/img/856.jpg'))    
-                        img.slide-img(src=require('/src/assets/img/856.jpg'))
-                        img.slide-img(src=require('/src/assets/img/856.jpg'))
-                      button.prev-button(aria-label='Посмотреть предыдущий слайд')
-                        i.material-icons navigate_before
-                      button.next-button(aria-label='Посмотреть следующий слайд')
-                        i.material-icons navigate_next
-                      .slider-container__nav
-                        .slider-container__point
-                        .slider-container__point
-                        .slider-container__point
-                        .slider-container__point
-                  .rooms-item__container
-                    .rooms-item__description
-                      .rooms-item__description-up
-                        p.rooms-item__room №
-                          span.rooms-item__room-number 856
-                          span.rooms-item__room-type
-                        p.rooms-item__cost
-                          span.rooms-item__cost-number 7 300₽
-                          span.rooms-item__cost-title в сутки
-                      .rooms-item__description-down
-                        p.rooms-item__stars
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                        p.rooms-item__review 
-                          span.rooms-item__review-numbers 19 
-                          span.rooms-item__review-title Отзывов
-                .rooms-item
-                  .rooms-item__image
-                    .slider-container                          
-                      .slider-container__slider
-                        img.slide-img(src=require('/src/assets/img/740.jpg'))
-                        img.slide-img(src=require('/src/assets/img/740.jpg'))    
-                        img.slide-img(src=require('/src/assets/img/740.jpg'))
-                        img.slide-img(src=require('/src/assets/img/740.jpg'))
-                      button.prev-button(aria-label='Посмотреть предыдущий слайд')
-                        i.material-icons navigate_before
-                      button.next-button(aria-label='Посмотреть следующий слайд')
-                        i.material-icons navigate_next
-                      .slider-container__nav
-                        .slider-container__point
-                        .slider-container__point
-                        .slider-container__point
-                        .slider-container__point
-                  .rooms-item__container
-                    .rooms-item__description
-                      .rooms-item__description-up
-                        p.rooms-item__room №
-                          span.rooms-item__room-number 740
-                          span.rooms-item__room-type
-                        p.rooms-item__cost
-                          span.rooms-item__cost-number 6 000₽
-                          span.rooms-item__cost-title в сутки
-                      .rooms-item__description-down
-                        p.rooms-item__stars
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star_empty.svg") alt="")
-                        p.rooms-item__review 
-                          span.rooms-item__review-numbers 44 
-                          span.rooms-item__review-title Отзывов
-                .rooms-item
-                  .rooms-item__image
-                    .slider-container                          
-                      .slider-container__slider
-                        img.slide-img(src=require('/src/assets/img/982.jpg'))
-                        img.slide-img(src=require('/src/assets/img/982.jpg'))    
-                        img.slide-img(src=require('/src/assets/img/982.jpg'))
-                        img.slide-img(src=require('/src/assets/img/982.jpg'))
-                      button.prev-button(aria-label='Посмотреть предыдущий слайд')
-                        i.material-icons navigate_before
-                      button.next-button(aria-label='Посмотреть следующий слайд')
-                        i.material-icons navigate_next
-                      .slider-container__nav
-                        .slider-container__point
-                        .slider-container__point
-                        .slider-container__point
-                        .slider-container__point
-                  .rooms-item__container
-                    .rooms-item__description
-                      .rooms-item__description-up
-                        p.rooms-item__room №
-                          span.rooms-item__room-number 982
-                          span.rooms-item__room-type
-                        p.rooms-item__cost
-                          span.rooms-item__cost-number 5 800₽
-                          span.rooms-item__cost-title в сутки
-                      .rooms-item__description-down
-                        p.rooms-item__stars
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star_empty.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star_empty.svg") alt="")
-                        p.rooms-item__review 
-                          span.rooms-item__review-numbers 56 
-                          span.rooms-item__review-title Отзывов
-                .rooms-item
-                  .rooms-item__image
-                    .slider-container                          
-                      .slider-container__slider
-                        img.slide-img(src=require('/src/assets/img/678.jpg'))
-                        img.slide-img(src=require('/src/assets/img/678.jpg'))    
-                        img.slide-img(src=require('/src/assets/img/678.jpg'))
-                        img.slide-img(src=require('/src/assets/img/678.jpg'))
-                      button.prev-button(aria-label='Посмотреть предыдущий слайд')
-                        i.material-icons navigate_before
-                      button.next-button(aria-label='Посмотреть следующий слайд')
-                        i.material-icons navigate_next
-                      .slider-container__nav
-                        .slider-container__point
-                        .slider-container__point
-                        .slider-container__point
-                        .slider-container__point
-                  .rooms-item__container
-                    .rooms-item__description
-                      .rooms-item__description-up
-                        p.rooms-item__room №
-                          span.rooms-item__room-number 678
-                          span.rooms-item__room-type
-                        p.rooms-item__cost
-                          span.rooms-item__cost-number 5 500₽
-                          span.rooms-item__cost-title в сутки
-                      .rooms-item__description-down
-                        p.rooms-item__stars
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                        p.rooms-item__review 
-                          span.rooms-item__review-numbers 45 
-                          span.rooms-item__review-title Отзывов
-                .rooms-item
-                  .rooms-item__image
-                    .slider-container                          
-                      .slider-container__slider
-                        img.slide-img(src=require('/src/assets/img/450.jpg'))
-                        img.slide-img(src=require('/src/assets/img/450.jpg'))    
-                        img.slide-img(src=require('/src/assets/img/450.jpg'))
-                        img.slide-img(src=require('/src/assets/img/450.jpg'))
-                      button.prev-button(aria-label='Посмотреть предыдущий слайд')
-                        i.material-icons navigate_before
-                      button.next-button(aria-label='Посмотреть следующий слайд')
-                        i.material-icons navigate_next
-                      .slider-container__nav
-                        .slider-container__point
-                        .slider-container__point
-                        .slider-container__point
-                        .slider-container__point
-                  .rooms-item__container
-                    .rooms-item__description
-                      .rooms-item__description-up
-                        p.rooms-item__room №
-                          span.rooms-item__room-number 450
-                          span.rooms-item__room-type
-                        p.rooms-item__cost
-                          span.rooms-item__cost-number 5 300₽
-                          span.rooms-item__cost-title в сутки
-                      .rooms-item__description-down
-                        p.rooms-item__stars
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star_empty.svg") alt="")
-                        p.rooms-item__review 
-                          span.rooms-item__review-numbers 39 
-                          span.rooms-item__review-title Отзывов
-                .rooms-item
-                  .rooms-item__image
-                    .slider-container                          
-                      .slider-container__slider
-                        img.slide-img(src=require('/src/assets/img/350.jpg'))
-                        img.slide-img(src=require('/src/assets/img/350.jpg'))    
-                        img.slide-img(src=require('/src/assets/img/350.jpg'))
-                        img.slide-img(src=require('/src/assets/img/350.jpg'))
-                      button.prev-button(aria-label='Посмотреть предыдущий слайд')
-                        i.material-icons navigate_before
-                      button.next-button(aria-label='Посмотреть следующий слайд')
-                        i.material-icons navigate_next
-                      .slider-container__nav
-                        .slider-container__point
-                        .slider-container__point
-                        .slider-container__point
-                        .slider-container__point
-                  .rooms-item__container
-                    .rooms-item__description
-                      .rooms-item__description-up
-                        p.rooms-item__room №
-                          span.rooms-item__room-number 350
-                          span.rooms-item__room-type
-                        p.rooms-item__cost
-                          span.rooms-item__cost-number 5 000₽
-                          span.rooms-item__cost-title в сутки
-                      .rooms-item__description-down
-                        p.rooms-item__stars
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star_empty.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star_empty.svg") alt="")
-                        p.rooms-item__review 
-                          span.rooms-item__review-numbers 77 
-                          span.rooms-item__review-title Отзывов
-                .rooms-item
-                  .rooms-item__image
-                    .slider-container                          
-                      .slider-container__slider
-                        img.slide-img(src=require('/src/assets/img/666.jpg'))
-                        img.slide-img(src=require('/src/assets/img/666.jpg'))    
-                        img.slide-img(src=require('/src/assets/img/666.jpg'))
-                        img.slide-img(src=require('/src/assets/img/666.jpg'))
-                      button.prev-button(aria-label='Посмотреть предыдущий слайд')
-                        i.material-icons navigate_before
-                      button.next-button(aria-label='Посмотреть следующий слайд')
-                        i.material-icons navigate_next
-                      .slider-container__nav
-                        .slider-container__point
-                        .slider-container__point
-                        .slider-container__point
-                        .slider-container__point
-                  .rooms-item__container
-                    .rooms-item__description
-                      .rooms-item__description-up
-                        p.rooms-item__room №
-                          span.rooms-item__room-number 666
-                          span.rooms-item__room-type
-                        p.rooms-item__cost
-                          span.rooms-item__cost-number 5 000₽
-                          span.rooms-item__cost-title в сутки
-                      .rooms-item__description-down
-                        p.rooms-item__stars
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                        p.rooms-item__review 
-                          span.rooms-item__review-numbers 25 
-                          span.rooms-item__review-title Отзывов
-                .rooms-item
-                  .rooms-item__image
-                    .slider-container                          
-                      .slider-container__slider
-                        img.slide-img(src=require('/src/assets/img/444.jpg'))
-                        img.slide-img(src=require('/src/assets/img/444.jpg'))    
-                        img.slide-img(src=require('/src/assets/img/444.jpg'))
-                        img.slide-img(src=require('/src/assets/img/444.jpg'))
-                      button.prev-button(aria-label='Посмотреть предыдущий слайд')
-                        i.material-icons navigate_before
-                      button.next-button(aria-label='Посмотреть следующий слайд')
-                        i.material-icons navigate_next
-                      .slider-container__nav
-                        .slider-container__point
-                        .slider-container__point
-                        .slider-container__point
-                        .slider-container__point
-                  .rooms-item__container
-                    .rooms-item__description
-                      .rooms-item__description-up
-                        p.rooms-item__room №
-                          span.rooms-item__room-number 444
-                          span.rooms-item__room-type
-                        p.rooms-item__cost
-                          span.rooms-item__cost-number 5 000₽
-                          span.rooms-item__cost-title в сутки
-                      .rooms-item__description-down
-                        p.rooms-item__stars
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star_empty.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star_empty.svg") alt="")
-                        p.rooms-item__review 
-                          span.rooms-item__review-numbers 15 
-                          span.rooms-item__review-title Отзывов
-                .rooms-item
-                  .rooms-item__image
-                    .slider-container                          
-                      .slider-container__slider
-                        img.slide-img(src=require('/src/assets/img/352.jpg'))
-                        img.slide-img(src=require('/src/assets/img/352.jpg'))    
-                        img.slide-img(src=require('/src/assets/img/352.jpg'))
-                        img.slide-img(src=require('/src/assets/img/352.jpg'))
-                      button.prev-button(aria-label='Посмотреть предыдущий слайд')
-                        i.material-icons navigate_before
-                      button.next-button(aria-label='Посмотреть следующий слайд')
-                        i.material-icons navigate_next
-                      .slider-container__nav
-                        .slider-container__point
-                        .slider-container__point
-                        .slider-container__point
-                        .slider-container__point
-                  .rooms-item__container
-                    .rooms-item__description
-                      .rooms-item__description-up
-                        p.rooms-item__room №
-                          span.rooms-item__room-number 352
-                          span.rooms-item__room-type
-                        p.rooms-item__cost
-                          span.rooms-item__cost-number 5 500₽
-                          span.rooms-item__cost-title в сутки
-                      .rooms-item__description-down
-                        p.rooms-item__stars
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star_empty.svg") alt="")
-                          img.rooms-item__star(src=require("/src/assets/img/svg/star_empty.svg") alt="")
-                        p.rooms-item__review 
-                          span.rooms-item__review-numbers 55 
-                          span.rooms-item__review-title Отзывов
+            .rooms-list__container
+              .rooms-item
+                .rooms-item__image
+                  .slider-container                          
+                    .slider-container__slider
+                      img.slide-img(src=require('/src/assets/img/888.jpg'))
+                      img.slide-img(src=require('/src/assets/img/888-2.jpg'))    
+                      img.slide-img(src=require('/src/assets/img/888-3.jpg'))
+                      img.slide-img(src=require('/src/assets/img/888-2.jpg'))
+                    button.prev-button(aria-label='Посмотреть предыдущий слайд')
+                      i.material-icons navigate_before
+                    button.next-button(aria-label='Посмотреть следующий слайд')
+                      i.material-icons navigate_next
+                    .slider-container__nav
+                      .slider-container__point
+                      .slider-container__point
+                      .slider-container__point
+                      .slider-container__point                  
+                .rooms-item__description
+                  .rooms-item__description-up
+                    .rooms-item__room-container
+                      span.rooms-item__room №
+                      span.rooms-item__room-number 888
+                      span.rooms-item__room-type люкс
+                    .rooms-item__cost
+                      span.rooms-item__cost-number 9 990₽
+                      span.rooms-item__cost-title в сутки
+                  .rooms-item__description-down
+                    .rooms-item__description-down-container
+                      .rooms-item__stars
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                      .rooms-item__review 
+                        span.rooms-item__review-numbers 145 
+                        span.rooms-item__review-title Отзывов
+              .rooms-item
+                .rooms-item__image
+                  .slider-container                          
+                    .slider-container__slider
+                      img.slide-img(src=require('/src/assets/img/840.jpg'))
+                      img.slide-img(src=require('/src/assets/img/840.jpg'))    
+                      img.slide-img(src=require('/src/assets/img/840.jpg'))
+                      img.slide-img(src=require('/src/assets/img/840.jpg'))
+                    button.prev-button(aria-label='Посмотреть предыдущий слайд')
+                      i.material-icons navigate_before
+                    button.next-button(aria-label='Посмотреть следующий слайд')
+                      i.material-icons navigate_next
+                    .slider-container__nav
+                      .slider-container__point
+                      .slider-container__point
+                      .slider-container__point
+                      .slider-container__point                  
+                .rooms-item__description
+                  .rooms-item__description-up
+                    .rooms-item__room-container
+                      span.rooms-item__room №
+                      span.rooms-item__room-number 840
+                      span.rooms-item__room-type
+                    p.rooms-item__cost
+                      span.rooms-item__cost-number 9 900₽
+                      span.rooms-item__cost-title в сутки
+                  .rooms-item__description-down
+                    .rooms-item__description-down-container
+                      p.rooms-item__stars
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star_empty.svg") alt="")
+                      p.rooms-item__review 
+                        span.rooms-item__review-numbers 65 
+                        span.rooms-item__review-title Отзывов
+              .rooms-item
+                .rooms-item__image
+                  .slider-container                          
+                    .slider-container__slider
+                      img.slide-img(src=require('/src/assets/img/980.jpg'))
+                      img.slide-img(src=require('/src/assets/img/980.jpg'))    
+                      img.slide-img(src=require('/src/assets/img/980.jpg'))
+                      img.slide-img(src=require('/src/assets/img/980.jpg'))
+                    button.prev-button(aria-label='Посмотреть предыдущий слайд')
+                      i.material-icons navigate_before
+                    button.next-button(aria-label='Посмотреть следующий слайд')
+                      i.material-icons navigate_next
+                    .slider-container__nav
+                      .slider-container__point
+                      .slider-container__point
+                      .slider-container__point
+                      .slider-container__point                  
+                .rooms-item__description
+                  .rooms-item__description-up
+                    .rooms-item__room-container
+                      span.rooms-item__room №
+                      span.rooms-item__room-number 980
+                      span.rooms-item__room-type люкс
+                    p.rooms-item__cost
+                      span.rooms-item__cost-number 8 500₽
+                      span.rooms-item__cost-title в сутки
+                  .rooms-item__description-down
+                    .rooms-item__description-down-container
+                      p.rooms-item__stars
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star_empty.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star_empty.svg") alt="")
+                      p.rooms-item__review 
+                        span.rooms-item__review-numbers 35 
+                        span.rooms-item__review-title Отзывов
+              .rooms-item
+                .rooms-item__image
+                  .slider-container                          
+                    .slider-container__slider
+                      img.slide-img(src=require('/src/assets/img/856.jpg'))
+                      img.slide-img(src=require('/src/assets/img/856.jpg'))    
+                      img.slide-img(src=require('/src/assets/img/856.jpg'))
+                      img.slide-img(src=require('/src/assets/img/856.jpg'))
+                    button.prev-button(aria-label='Посмотреть предыдущий слайд')
+                      i.material-icons navigate_before
+                    button.next-button(aria-label='Посмотреть следующий слайд')
+                      i.material-icons navigate_next
+                    .slider-container__nav
+                      .slider-container__point
+                      .slider-container__point
+                      .slider-container__point
+                      .slider-container__point                  
+                .rooms-item__description
+                  .rooms-item__description-up
+                    .rooms-item__room-container
+                      span.rooms-item__room №
+                      span.rooms-item__room-number 856
+                      span.rooms-item__room-type
+                    p.rooms-item__cost
+                      span.rooms-item__cost-number 7 300₽
+                      span.rooms-item__cost-title в сутки
+                  .rooms-item__description-down
+                    .rooms-item__description-down-container
+                      p.rooms-item__stars
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                      p.rooms-item__review 
+                        span.rooms-item__review-numbers 19 
+                        span.rooms-item__review-title Отзывов
+              .rooms-item
+                .rooms-item__image
+                  .slider-container                          
+                    .slider-container__slider
+                      img.slide-img(src=require('/src/assets/img/740.jpg'))
+                      img.slide-img(src=require('/src/assets/img/740.jpg'))    
+                      img.slide-img(src=require('/src/assets/img/740.jpg'))
+                      img.slide-img(src=require('/src/assets/img/740.jpg'))
+                    button.prev-button(aria-label='Посмотреть предыдущий слайд')
+                      i.material-icons navigate_before
+                    button.next-button(aria-label='Посмотреть следующий слайд')
+                      i.material-icons navigate_next
+                    .slider-container__nav
+                      .slider-container__point
+                      .slider-container__point
+                      .slider-container__point
+                      .slider-container__point                  
+                .rooms-item__description
+                  .rooms-item__description-up
+                    .rooms-item__room-container
+                      span.rooms-item__room №
+                      span.rooms-item__room-number 740
+                      span.rooms-item__room-type
+                    p.rooms-item__cost
+                      span.rooms-item__cost-number 6 000₽
+                      span.rooms-item__cost-title в сутки
+                  .rooms-item__description-down
+                    .rooms-item__description-down-container
+                      p.rooms-item__stars
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star_empty.svg") alt="")
+                      p.rooms-item__review 
+                        span.rooms-item__review-numbers 44 
+                        span.rooms-item__review-title Отзывов
+              .rooms-item
+                .rooms-item__image
+                  .slider-container                          
+                    .slider-container__slider
+                      img.slide-img(src=require('/src/assets/img/982.jpg'))
+                      img.slide-img(src=require('/src/assets/img/982.jpg'))    
+                      img.slide-img(src=require('/src/assets/img/982.jpg'))
+                      img.slide-img(src=require('/src/assets/img/982.jpg'))
+                    button.prev-button(aria-label='Посмотреть предыдущий слайд')
+                      i.material-icons navigate_before
+                    button.next-button(aria-label='Посмотреть следующий слайд')
+                      i.material-icons navigate_next
+                    .slider-container__nav
+                      .slider-container__point
+                      .slider-container__point
+                      .slider-container__point
+                      .slider-container__point                  
+                .rooms-item__description
+                  .rooms-item__description-up
+                    .rooms-item__room-container
+                      span.rooms-item__room №
+                      span.rooms-item__room-number 982
+                      span.rooms-item__room-type
+                    p.rooms-item__cost
+                      span.rooms-item__cost-number 5 800₽
+                      span.rooms-item__cost-title в сутки
+                  .rooms-item__description-down
+                    .rooms-item__description-down-container
+                      p.rooms-item__stars
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star_empty.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star_empty.svg") alt="")
+                      p.rooms-item__review 
+                        span.rooms-item__review-numbers 56 
+                        span.rooms-item__review-title Отзывов
+              .rooms-item
+                .rooms-item__image
+                  .slider-container                          
+                    .slider-container__slider
+                      img.slide-img(src=require('/src/assets/img/678.jpg'))
+                      img.slide-img(src=require('/src/assets/img/678.jpg'))    
+                      img.slide-img(src=require('/src/assets/img/678.jpg'))
+                      img.slide-img(src=require('/src/assets/img/678.jpg'))
+                    button.prev-button(aria-label='Посмотреть предыдущий слайд')
+                      i.material-icons navigate_before
+                    button.next-button(aria-label='Посмотреть следующий слайд')
+                      i.material-icons navigate_next
+                    .slider-container__nav
+                      .slider-container__point
+                      .slider-container__point
+                      .slider-container__point
+                      .slider-container__point                  
+                .rooms-item__description
+                  .rooms-item__description-up
+                    .rooms-item__room-container
+                      span.rooms-item__room №
+                      span.rooms-item__room-number 678
+                      span.rooms-item__room-type
+                    p.rooms-item__cost
+                      span.rooms-item__cost-number 5 500₽
+                      span.rooms-item__cost-title в сутки
+                  .rooms-item__description-down
+                    .rooms-item__description-down-container
+                      p.rooms-item__stars
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                      p.rooms-item__review 
+                        span.rooms-item__review-numbers 45 
+                        span.rooms-item__review-title Отзывов
+              .rooms-item
+                .rooms-item__image
+                  .slider-container                          
+                    .slider-container__slider
+                      img.slide-img(src=require('/src/assets/img/450.jpg'))
+                      img.slide-img(src=require('/src/assets/img/450.jpg'))    
+                      img.slide-img(src=require('/src/assets/img/450.jpg'))
+                      img.slide-img(src=require('/src/assets/img/450.jpg'))
+                    button.prev-button(aria-label='Посмотреть предыдущий слайд')
+                      i.material-icons navigate_before
+                    button.next-button(aria-label='Посмотреть следующий слайд')
+                      i.material-icons navigate_next
+                    .slider-container__nav
+                      .slider-container__point
+                      .slider-container__point
+                      .slider-container__point
+                      .slider-container__point                  
+                .rooms-item__description
+                  .rooms-item__description-up
+                    .rooms-item__room-container
+                      span.rooms-item__room №
+                      span.rooms-item__room-number 450
+                      span.rooms-item__room-type
+                    p.rooms-item__cost
+                      span.rooms-item__cost-number 5 300₽
+                      span.rooms-item__cost-title в сутки
+                  .rooms-item__description-down
+                    .rooms-item__description-down-container
+                      p.rooms-item__stars
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star_empty.svg") alt="")
+                      p.rooms-item__review 
+                        span.rooms-item__review-numbers 39 
+                        span.rooms-item__review-title Отзывов
+              .rooms-item
+                .rooms-item__image
+                  .slider-container                          
+                    .slider-container__slider
+                      img.slide-img(src=require('/src/assets/img/350.jpg'))
+                      img.slide-img(src=require('/src/assets/img/350.jpg'))    
+                      img.slide-img(src=require('/src/assets/img/350.jpg'))
+                      img.slide-img(src=require('/src/assets/img/350.jpg'))
+                    button.prev-button(aria-label='Посмотреть предыдущий слайд')
+                      i.material-icons navigate_before
+                    button.next-button(aria-label='Посмотреть следующий слайд')
+                      i.material-icons navigate_next
+                    .slider-container__nav
+                      .slider-container__point
+                      .slider-container__point
+                      .slider-container__point
+                      .slider-container__point                  
+                .rooms-item__description
+                  .rooms-item__description-up
+                    .rooms-item__room-container
+                      span.rooms-item__room №
+                      span.rooms-item__room-number 350
+                      span.rooms-item__room-type
+                    p.rooms-item__cost
+                      span.rooms-item__cost-number 5 000₽
+                      span.rooms-item__cost-title в сутки
+                  .rooms-item__description-down
+                    .rooms-item__description-down-container
+                      p.rooms-item__stars
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star_empty.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star_empty.svg") alt="")
+                      p.rooms-item__review 
+                        span.rooms-item__review-numbers 77 
+                        span.rooms-item__review-title Отзывов
+              .rooms-item
+                .rooms-item__image
+                  .slider-container                          
+                    .slider-container__slider
+                      img.slide-img(src=require('/src/assets/img/666.jpg'))
+                      img.slide-img(src=require('/src/assets/img/666.jpg'))    
+                      img.slide-img(src=require('/src/assets/img/666.jpg'))
+                      img.slide-img(src=require('/src/assets/img/666.jpg'))
+                    button.prev-button(aria-label='Посмотреть предыдущий слайд')
+                      i.material-icons navigate_before
+                    button.next-button(aria-label='Посмотреть следующий слайд')
+                      i.material-icons navigate_next
+                    .slider-container__nav
+                      .slider-container__point
+                      .slider-container__point
+                      .slider-container__point
+                      .slider-container__point                  
+                .rooms-item__description
+                  .rooms-item__description-up
+                    .rooms-item__room-container
+                      span.rooms-item__room №
+                      span.rooms-item__room-number 666
+                      span.rooms-item__room-type
+                    p.rooms-item__cost
+                      span.rooms-item__cost-number 5 000₽
+                      span.rooms-item__cost-title в сутки
+                  .rooms-item__description-down
+                    .rooms-item__description-down-container
+                      p.rooms-item__stars
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                      p.rooms-item__review 
+                        span.rooms-item__review-numbers 25 
+                        span.rooms-item__review-title Отзывов
+              .rooms-item
+                .rooms-item__image
+                  .slider-container                          
+                    .slider-container__slider
+                      img.slide-img(src=require('/src/assets/img/444.jpg'))
+                      img.slide-img(src=require('/src/assets/img/444.jpg'))    
+                      img.slide-img(src=require('/src/assets/img/444.jpg'))
+                      img.slide-img(src=require('/src/assets/img/444.jpg'))
+                    button.prev-button(aria-label='Посмотреть предыдущий слайд')
+                      i.material-icons navigate_before
+                    button.next-button(aria-label='Посмотреть следующий слайд')
+                      i.material-icons navigate_next
+                    .slider-container__nav
+                      .slider-container__point
+                      .slider-container__point
+                      .slider-container__point
+                      .slider-container__point                  
+                .rooms-item__description
+                  .rooms-item__description-up
+                    .rooms-item__room-container
+                      span.rooms-item__room №
+                      span.rooms-item__room-number 444
+                      span.rooms-item__room-type
+                    p.rooms-item__cost
+                      span.rooms-item__cost-number 5 000₽
+                      span.rooms-item__cost-title в сутки
+                  .rooms-item__description-down
+                    .rooms-item__description-down-container
+                      p.rooms-item__stars
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star_empty.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star_empty.svg") alt="")
+                      p.rooms-item__review 
+                        span.rooms-item__review-numbers 15 
+                        span.rooms-item__review-title Отзывов
+              .rooms-item
+                .rooms-item__image
+                  .slider-container                          
+                    .slider-container__slider
+                      img.slide-img(src=require('/src/assets/img/352.jpg'))
+                      img.slide-img(src=require('/src/assets/img/352.jpg'))    
+                      img.slide-img(src=require('/src/assets/img/352.jpg'))
+                      img.slide-img(src=require('/src/assets/img/352.jpg'))
+                    button.prev-button(aria-label='Посмотреть предыдущий слайд')
+                      i.material-icons navigate_before
+                    button.next-button(aria-label='Посмотреть следующий слайд')
+                      i.material-icons navigate_next
+                    .slider-container__nav
+                      .slider-container__point
+                      .slider-container__point
+                      .slider-container__point
+                      .slider-container__point                  
+                .rooms-item__description
+                  .rooms-item__description-up
+                    .rooms-item__room-container
+                      span.rooms-item__room №
+                      span.rooms-item__room-number 352
+                      span.rooms-item__room-type
+                    p.rooms-item__cost
+                      span.rooms-item__cost-number 5 500₽
+                      span.rooms-item__cost-title в сутки
+                  .rooms-item__description-down
+                    .rooms-item__description-down-container
+                      p.rooms-item__stars
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star_empty.svg") alt="")
+                        img.rooms-item__star(src=require("/src/assets/img/svg/star_empty.svg") alt="")
+                      p.rooms-item__review 
+                        span.rooms-item__review-numbers 55 
+                        span.rooms-item__review-title Отзывов
             .pagination
               .pagination__pages
                 button.pagination__first-page
@@ -621,6 +633,7 @@ html(lang="ru")
 
 
               .pagination__titles
+                span 1 – 12 из 100+ вариантов аренды
 
 
 
