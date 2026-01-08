@@ -6,68 +6,171 @@ html(lang="ru")
     title T0XIN - Бронирование номеров
     link(rel="stylesheet", href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css")
     link(rel="stylesheet", href="/resources/demos/style.css")
-    link(href=require('./uikit.scss') rel='stylesheet')
+    link(href=require('./_uikit.scss') rel='stylesheet')
     
     
   body
-    .colors-and-type
-        .colors
-          .colors__item
-            .colors__square.dark-shade-100
-            .colors__title
-              p.ui-title  Dark Shade 100%
-              p.ui-title.ui-small-title #1F2041              
-          .colors__item
-            .colors__square.dark-shade-75
-            .colors__title
-              p.ui-title Dark Shade 75%
-              p.ui-title.ui-small-title #1F2041
-          .colors__item
-            .colors__square.dark-shade-50
-            .colors__title
-              p.ui-title Dark Shade 50%
-              p.ui-title.ui-small-title #1F2041
-          .colors__item
-            .colors__square.dark-shade-25
-            .colors__title
-              p.ui-title Dark Shade 25%
-              p.ui-title.ui-small-title #1F2041
-          .colors__item
-            .colors__square.dark-shade-5
-            .colors__title
-              p.ui-title Dark Shade 5%
-              p.ui-title.ui-small-title #1F2041
-          .colors__item
-            .colors__square.purple
-            .colors__title
-              p.ui-title Purple
-              p.ui-title.ui-small-title #BC9CFF
-          .colors__item
-            .colors__square.green
-            .colors__title
-              p.ui-title Green
-              p.ui-title.ui-small-title #6FCF97
-        .fonts
-          .fonts__sign
-            .sign
-              p.sign-h1 h1
-            .sign
-              p.sign-h2 h2
-            .sign
-              p.sign-h3 h3
-            .sign
-              p.sign-body Body
-          .fonts__item
-            p.fonts__title.title-24
-              | This one is the sub-section or
-              br 
-              | widget title
-            p.fonts__title.title-19
-              | Next one is the item title inside
-              br
-              | widgets
-            p.fonts__title.title-12 This is a label or CTA text
-            p.fonts__title.title-14
-              | This is the body text which is used for most
-              br
-              | of the design, like paragraphs, lists, etc.     
+    .ui-kit__header
+      img.group-icon(src=require("/src/assets/img/svg/group-icon.svg"), alt="") 
+    .wrapper      
+      .colors-and-type
+          .colors
+            .colors__item
+              .colors__square.dark-shade-100
+              .colors__title
+                p.ui-title  Dark Shade 100%
+                p.ui-title.ui-small-title #1F2041              
+            .colors__item
+              .colors__square.dark-shade-75
+              .colors__title
+                p.ui-title Dark Shade 75%
+                p.ui-title.ui-small-title #1F2041
+            .colors__item
+              .colors__square.dark-shade-50
+              .colors__title
+                p.ui-title Dark Shade 50%
+                p.ui-title.ui-small-title #1F2041
+            .colors__item
+              .colors__square.dark-shade-25
+              .colors__title
+                p.ui-title Dark Shade 25%
+                p.ui-title.ui-small-title #1F2041
+            .colors__item
+              .colors__square.dark-shade-5
+              .colors__title
+                p.ui-title Dark Shade 5%
+                p.ui-title.ui-small-title #1F2041
+            .colors__item
+              .colors__square.purple
+              .colors__title
+                p.ui-title Purple
+                p.ui-title.ui-small-title #BC9CFF
+            .colors__item
+              .colors__square.green
+              .colors__title
+                p.ui-title Green
+                p.ui-title.ui-small-title #6FCF97
+          .fonts
+            .fonts__item
+              .sign.padding-top
+                p.sign-h1 h1
+              p.fonts__title.title-24
+                | This one is the sub-section or
+                br 
+                | widget title
+            .fonts__item
+              .sign
+                p.sign-h2 h2
+              p.fonts__title.title-19
+                | Next one is the item title inside
+                br
+                | widgets
+            .fonts__item
+              .sign
+                p.sign-h3 h3
+              p.fonts__title.title-12 This is a label or CTA text
+            .fonts__item
+              .sign.padding-top
+                p.sign-body Body
+              p.fonts__title.title-14
+                | This is the body text which is used for most
+                br
+                | of the design, like paragraphs, lists, etc.
+    .ui-kit__header
+      img.group-icon(src=require("/src/assets/img/svg/group-icon.svg"), alt="") 
+    .wrapper           
+      .form-elements
+        .first-column
+          .text-field__container
+            .text-field
+              span.title text field
+              span.title default
+            .socials__form
+              p.socials__adds Email
+          .text-field__container
+            .text-field
+              span.title text field
+              span.title hover / focus
+            .socials__form
+              p.socials__adds This is pretty awesome
+          .find-form__guests
+            span.title dropdown
+            input.box-guests.box-guests--search-page(placeholder="Сколько гостей" name="arrival" required="")
+            .guests__click-area.guests__click-area__search-page
+              img.expand-residence(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
+          .find-form__dates.find-form__dates--search-page
+            span.title masked text field
+            input.box-guests.box-guests--landing-page(placeholder="ДД.ММ.ГГГГ" name="arrival" required="")
+            .find-form__click-area
+              img.expand-residence(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
+          .find-form__dates
+            .date-coming
+              span.title date Dropdown
+              input.date-box(placeholder="ДД.ММ.ГГГГ" name="arrival" required="")  
+              .find-form__click-area
+                img.expand-coming(src=require("/src/assets/img/svg/expand_more.svg"), alt="")                    
+            .date-leaving
+              span.title date Dropdown
+              input.date-box(placeholder="19.08.2019" name="arrival" required="")
+              .find-form__click-area
+                img.expand-leaving(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
+          .find-form__dates.find-form__dates--search-page
+            span.title filter date dropdown
+            input.box-guests.box-guests--landing-page(placeholder="19 авг - 23 авг" name="arrival" required="")
+            .find-form__click-area.find-form__click-area__search-page
+              img.expand-residence(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
+          .text-field__container
+            .text-field
+              span.title subscription text field
+              span.title              
+            .socials__form
+              p.socials__adds Email
+              img.arrowForwardLila(src=require("/src/assets/img/svg/arrow_forwardLila.svg"), alt="")
+          .find-form__convenience
+              .text-field
+                span.title dropdown
+                span.title default
+              input.box-guests(placeholder="2 спальни, 2 кровати..." name="arrival" required="")
+              img.expand-residence(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
+              .convenience__click-area
+              .convenience__dropdown
+          .find-form__convenience
+              .text-field
+                span.title dropdown
+                span.title expanded              
+              input.box-guests(placeholder="2 спальни, 2 кровати..." name="arrival" required="")
+              img.expand-residence(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
+              .convenience__click-area
+              .convenience__dropdown
+          .find-form__advanced-convenience
+              span.title expandable checkbox list           
+          .find-form__advanced-convenience
+              span.title expandable checkbox list
+              .find-form__container
+                label.checkbox
+                  input.checkbox__indicator(type="checkbox")
+                  .checkbox__container
+                    .link Завтрак
+                label.checkbox
+                  input.checkbox__indicator(type="checkbox")
+                  .checkbox__container
+                    .link Письменный стол
+                label.checkbox
+                  input.checkbox__indicator(type="checkbox")
+                  .checkbox__container
+                    .link Стул для кормления
+                label.checkbox
+                  input.checkbox__indicator(type="checkbox")
+                  .checkbox__container
+                    .link Кроватка
+                label.checkbox
+                  input.checkbox__indicator(type="checkbox")
+                  .checkbox__container
+                    .link Телевизор
+                label.checkbox
+                  input.checkbox__indicator(type="checkbox")
+                  .checkbox__container
+                    .link Шампунь
+          .comfort                                                                      
+        .second-column
+        .third-column

@@ -1,3 +1,24 @@
+@use '/src/styles/normalize';
+@use '/src/styles/styles';
+@use '/src/styles/fonts';
+@use '/src/blocks/header/header';
+@use '/src/blocks/air-datepicker/air-datepicker';
+@use '/src/blocks/footer/footer';
+@use '/src/blocks/pages/uikit/uikit';
+
+
+@mixin flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.no-click-link {
+    cursor: default;
+    pointer-events:none;
+    
+}
+
 .main {    
     
     height: 90rem;
@@ -63,26 +84,22 @@
 }
 
 
-.find-form__dates {
+/*.find-form__dates {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     
-    margin-bottom: 6.2%;
+    margin-bottom: 2rem;
     
     
-}
+}*/
 
-.find-form__dates:last-child {
+/*.find-form__dates:last-child {
     margin-right: 0;
-}
+}*/
 
-.test {
-    display: block;
-}
-
-.date-coming {
+/*.date-coming {
     width: 47%;    
     position: relative;
     
@@ -147,14 +164,16 @@
     border-color: #1F204175;
     transition: border-color 0.3s, color 1s;
     cursor: pointer;
-}
+}*/
 
-.find-form__guests {
+/*.find-form__guests {
     position: relative;
-    margin-bottom: 9.7%;
+    margin-bottom: 3.2rem;
 }
+    
 
-.box-guests {    
+.box-guests {  
+    position: relative;  
     width: 100%; 
     height: 4.4rem;
     border: 0.1rem solid;
@@ -344,8 +363,17 @@
     height: 3rem;
 }
 
-.show {display: block;}
+.show {display: block;}*/
 
-.date-box:last-child {
+/*.date-box:last-child {
     margin-right: 0;
+}*/
+
+
+.find-form__guests {
+    margin-bottom: 3.2rem;
+}
+
+.find-form__dates {
+    margin-bottom: 2rem;    
 }

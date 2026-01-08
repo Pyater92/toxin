@@ -9,7 +9,7 @@ html(lang="ru")
     link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
     script(src="https://code.jquery.com/jquery-3.7.1.js")
     script(src="https://code.jquery.com/ui/1.14.0/jquery-ui.js")
-    link(href=require('./search.scss') rel='stylesheet')    
+    link(href=require('./_search.scss') rel='stylesheet')    
     script(src='../search/search.js' defer="defer")
     
     
@@ -19,15 +19,15 @@ html(lang="ru")
       .wrapper
         .search-room-container
           .filter
-            .find-form__dates.test
+            .find-form__dates.find-form__dates--search-page
               span.title даты пребывания в отеле
-              input.box-guests.box-guests__landing-page(placeholder="19 авг - 23 авг" name="arrival" required="")
-              .find-form__click-area.find-form__click-area__search-page
+              input.box-guests.box-guests--landing-page(placeholder="19 авг - 23 авг" name="arrival" required="")
+              .find-form__click-area.find-form__click-area--search-page
                 img.expand-residence(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
             .find-form__guests
               span.title гости
-              input.box-guests.box-guests__search-page(placeholder="3 гостя, 1 младенец" name="arrival" required="")
-              .guests__click-area.guests__click-area__search-page
+              input.box-guests.box-guests--search-page(placeholder="3 гостя, 1 младенец" name="arrival" required="")
+              .guests__click-area.guests__click-area--search-page
                 img.expand-residence(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
               .guests__dropdown
                       ul
@@ -106,9 +106,9 @@ html(lang="ru")
                         | и проводит до номера.
             .find-form__convenience
               span.title удобства номера
-              input.box-guests(placeholder="2 спальни, 2 кровати..." name="arrival" required="")
-              img.expand-residence(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
+              input.box-guests.box-guests__search-page(placeholder="2 спальни, 2 кровати..." name="arrival" required="")              
               .convenience__click-area
+                img.expand-residence(src=require("/src/assets/img/svg/expand_more.svg"), alt="")
               .convenience__dropdown
                 ul
                   li

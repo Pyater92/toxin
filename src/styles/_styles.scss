@@ -1,3 +1,12 @@
+/*@mixin flex-dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}*/
+
+
+
+
 html {
   font-size: 10px;
   box-sizing: border-box;
@@ -9,14 +18,13 @@ html {
 }
 
 body {
+  position: relative;
   font-family: 'Montserrat';
   font-style: normal;
   font-size: 1.4rem;
   font-weight: normal;
-  color: #1F204150;
-  
+  color: #1F204150;  
 }
-
 
 .wrapper {
   min-width: 116rem;
@@ -39,10 +47,8 @@ body {
   
 }
 
-
 .link-bold {
   font-family: "Montserrat Bold";
   color: #1F204175;
   line-height: 1.8rem;
 }
-

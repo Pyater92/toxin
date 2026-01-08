@@ -3,26 +3,23 @@
 @use '/src/styles/fonts';
 @use '/src/blocks/header/header';
 @use '/src/blocks/air-datepicker/air-datepicker';
+@use '/src/blocks/pages/landing/landing';
+@use '/src/blocks/pages/uikit/uikit';
 @use '/src/blocks/footer/footer';
-@use '/src/blocks/main/main';
 
+
+@mixin flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .search-room-container {
     width: 100%;
     padding-top: 7rem;
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
 }
-
-
-
-
-
-
-
-
-
 
 .filter {
     width: 22.9%;
@@ -51,25 +48,18 @@
 }
 
 .expand-residence {
-
     //position: absolute;
     //left: 23.7rem;
-    //top: 3.6rem;
-    
+    //top: 3.6rem;    
 }
 
 .find-form__guests {
-    margin-bottom: 3.2rem;
-}
-
-.box-guests__search-page {
-    
-    margin-top: 0.45rem;
+    //margin-bottom: 3.2rem;
 }
 
 .guests__click-area__search-page {
-    padding-right: 5.5%;
-    padding-bottom: 0.5%;
+    padding-right: 1.46094rem;
+    padding-bottom: 0.1rem;
     top: 2rem;
 }
 
@@ -78,10 +68,8 @@
 }
 
 .range__headlink {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2.195rem;
-    align-items: center;
+    @include flex-box;
+    margin-bottom: 2.195rem;    
 }
 
 .range__display {
@@ -234,18 +222,17 @@
 }
 
 .convenience__click-area {
+    @include flex-box;
+    justify-content: end;
     position: absolute;
+    padding-right: 1.46rem;
     border: 0.1rem solid;
     border-color: #E5E5E5;
     height: 4.4rem;
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+    border-radius: 0.5rem;
     transition: border-color 0.3s, color 1s;
     width: 100%;
-    top: 1.9rem;
-    
+    top: 1.9rem;    
 }
 
 .convenience__click-area:hover {
@@ -291,12 +278,10 @@
     font-size: 2.4rem;
     font-weight: bold;
     color: #1F2041;
-    margin-bottom: 2.345rem;
-    
+    margin-bottom: 2.345rem;    
 }
 
-.rooms-list__title {
-    
+.rooms-list__title {    
     font-family: "Montserrat Bold";
     font-weight: 700;
     color: #1F2041;
@@ -309,8 +294,7 @@
     grid-template-columns: repeat(3, 1fr);
     row-gap: 2.05rem;
     column-gap: 1.44%;
-    margin-bottom: 4rem;
-       
+    margin-bottom: 4rem;       
 }
 
 .rooms-item {
@@ -319,19 +303,11 @@
     border-radius: 0.4rem;
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(31,32,65,.05);
-    transition: box-shadow .2s ease;
-    
+    transition: box-shadow .2s ease;    
 }
 
 .rooms-item:hover {
     box-shadow: 0 10px 30px rgba(31,32,65,.15)
-}
-
-    
-
-
-.rooms-item__image {
-    
 }
 
 .rooms-item__image img {
@@ -345,21 +321,16 @@
     //height: 26%;
     height: 41.1%;
     display: grid;    
-    padding: 10% 6.66% 7.38% 7.41%;
-    
+    padding: 10% 6.66% 7.38% 7.41%;    
 }
 
 .rooms-item__description-up {
-    display: flex;
+    @include flex-box ;
     max-width: 100%;
     //padding-bottom: 1%;
-    justify-content: space-between;
-    align-items: center;  
     height: 50%;
     padding-bottom: 1.9%;
-    padding-top: 1%;  
-    
-    
+    padding-top: 1%;    
 }
 
 .rooms-item__room-container {
@@ -368,13 +339,11 @@
     font-size: 1.4rem;
     font-weight: bold;
     margin-right: 0.35rem;
-    color: #1F2041;
-    
+    color: #1F2041;    
 }
 
 .rooms-item__room{
     padding-bottom: 1.5%;
-
 }
 
 
@@ -384,8 +353,7 @@
     font-size: 1.9rem;
     font-weight: bold;
     margin-left: 0.4rem;
-    margin-right: 0.835rem;  
-    
+    margin-right: 0.835rem;
 }
 
 
@@ -407,21 +375,17 @@
 
 .rooms-item__cost-number {
     font-family: 'Montserrat Bold';
-    font-size: 1.4rem;
-    
+    font-size: 1.4rem;    
     margin-right: 0.38rem;
 }
 
 .rooms-item__cost-title {
     font-weight: normal;
-    font-size: 1.2rem;
-    
+    font-size: 1.2rem;    
 }
 
-.rooms-item__description-down {
-    
-    height: 50%;  
-    
+.rooms-item__description-down {    
+    height: 50%;    
     padding-right: 0.25rem;
 }
 
@@ -441,12 +405,9 @@
     align-items: end;
 }
 
-
 .rooms-item__star {
     margin-right: 0.4rem;
 }
-
-
 
 .rooms-item__review {
     display: flex;
@@ -458,8 +419,7 @@
 }
 
 .rooms-item__review-numbers {
-    font-family: 'Montserrat Bold';
-    
+    font-family: 'Montserrat Bold';    
 }
 
 .rooms-item__review-title {
@@ -471,11 +431,9 @@
 
 .page-title {
     text-align: center;
-  }
-  
+}
 
   //------------------------------------------------------
-
   
 .slider-container {
     position: relative;
@@ -489,18 +447,13 @@
     overflow: hidden;
     display: flex;
     transition: transform 0.5s ease-in-out;
-
 }  
 
 .slide-img {
     width: 100%;
     height: 100%;
     object-fit: fill;
-  }
-
-.slide-img:first-child {
-     
-}  
+}
 
 .prev-button,
 .next-button {
@@ -514,8 +467,7 @@
     font-size: 24px;
     color: white;
     opacity: 0;
-  }
-  
+}
   
 .prev-button {
     left: 0%;
@@ -540,11 +492,11 @@
     background: linear-gradient(90deg,rgba(0,0,0,0),rgba(0,0,0,.5) 99.99%,hsla(0,0%,100%,0));
     opacity: 0;    
     cursor: default;
-  }
+}
 
-  .next-button i {
+.next-button i {
     cursor: pointer;
-  }
+}
 
 .next-button:hover {
     background: linear-gradient(90deg,rgba(0,0,0,0),rgba(0,0,0,.5) 99.99%,hsla(0,0%,100%,0));
@@ -618,8 +570,7 @@
     height: 0.75rem;
     right: 1.5rem;
     bottom: 1.5rem;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
 }
 
 .slider-container__point {
@@ -634,14 +585,11 @@
 .pagination {
     margin-left: 34.83%;
     width: 28.9%;
-    margin-right: auto;
-   
-    
+    margin-right: auto;    
 }
 
 .pagination__pages {
-    display: flex;
-    align-items: center;
+    @include flex-box ;
     justify-content: start;
     font-size: 1.2rem;
     margin-bottom: 1.3rem;
@@ -672,7 +620,6 @@
     border-radius: 2rem;
     padding-right: 0.2rem;
     padding-bottom: 1.3rem;
-
 }
 
 .pagination__page:hover {
@@ -693,18 +640,15 @@
     border-radius: 2rem;
     border: none;
     width: 4rem;
-    height: 4rem;
-    
+    height: 4rem;    
 }
 
 .arrow-forward {
     padding-left: 0.35rem;
     padding-top: 0.8rem;
     width: 2.4rem;
-    height: 2.4rem;
-    
+    height: 2.4rem;    
 }
-
 
 .pagination__titles {
     padding: 0 0.44rem 0;

@@ -1,3 +1,9 @@
+@mixin flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .header {
     
     box-shadow: 0 10px 20px rgba(31,32,65,.05);
@@ -8,13 +14,9 @@
 }
 
 .header-container {
-    
+    @include flex-box; 
     min-height: 7rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-        
+            
 }
 
 .container-logo {
@@ -37,10 +39,8 @@
 }
 
 .navigation__item {
+    @include flex-box;
     margin-left: 1.724%;
-    display: flex;
-    align-items: center;    
-    justify-content: space-between;
     color: #1F2041;
     white-space: nowrap;
     
@@ -87,15 +87,14 @@
 
 
 .sigh-in-button {
+    @include flex-box;
+    justify-content: center;
     font-family: "Montserrat Bold";
     font-size: 1.2rem;
     width: 8.7rem;
     height: 3.4rem;
     border-radius: 3.4rem;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: #BC9CFF;
     background: linear-gradient(#BC9CFF 0%, #8BA4F9 100%); 
 }
@@ -124,6 +123,8 @@
 }
 
 .sigh-up-button {
+    @include flex-box;
+    justify-content: center;
     font-family: "Montserrat Bold";
     font-size: 1.2rem;
     color: white;    
@@ -131,9 +132,6 @@
     height: 3.4rem;
     border-radius: 3.4rem;
     border:  0.01rem solid #BC9CFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: linear-gradient(#BC9CFF 0%, #8BA4F9 100%);   
 
 }

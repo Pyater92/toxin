@@ -1,9 +1,20 @@
+@mixin flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin grid-start__lh-normal {
+    display: grid;
+    align-items: start;
+    line-height: normal;
+}
+
 .footer-container__upper {
     padding-top: 10rem;
     padding-bottom: 8rem;
-    display: flex;
+    @include flex-box;
     align-items: start;    
-    justify-content: space-between;
     line-height: 1.2rem;
     white-space: nowrap;
     
@@ -21,11 +32,9 @@
 }
 
 .footer-container__site-map {
-    padding-top: 0.4rem;
-    display: grid;
-    align-items: start;
-    margin-right: 4.975%;
-    line-height: normal;
+    @include grid-start__lh-normal;
+    padding-top: 0.4rem;    
+    margin-right: 4.975%;    
 }
 
 .footer-nav > :first-child{
@@ -37,26 +46,21 @@
 }
 
 .footer-container__about {
-    padding-top: 0.4rem;
-    display: grid;
-    align-items: start;
+    @include grid-start__lh-normal;
+    padding-top: 0.4rem;    
     margin-right: 7.9%;
-    line-height: normal;
+    
 }
 
 .footer-container__helpdesk {
+    @include grid-start__lh-normal;
     padding-left: 0.1rem;
     padding-top: 0.4rem;
-    display: grid;
-    align-items: start;
     margin-right: 4.4%;
-    line-height: normal;
 }
 
 .socials {
-    display: grid;
-    align-items: start;
-    line-height: normal;
+    @include grid-start__lh-normal;
     padding-left: 0.1rem;
     padding-top: 0.4rem;
     color: #1F2041BF;
@@ -75,24 +79,22 @@
 
 
 .socials__item {
-    
+    margin-bottom: 2.3rem;
     line-height: 2.4rem;
 }
 
 .arrowForwardLila {
-    position: absolute;
-    right: 1.3rem;
     background-color: linear-gradient(#BC9CFF 0%, #8BA4F9 100%);    
 }
 
+.socials__form-container {
+    width: 26rem;
+    
+}
 
 .socials__form {
-    margin-top: 2.3rem;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 26rem;
+    @include flex-box;
+    width: 100%;
     height: 4.4rem;
     border: 0.1rem solid;
     border-color: #1F204140;
@@ -104,19 +106,11 @@
     padding-right: 1.5rem;
 }
 
-.socials__adds {
-    color: #1F204150;
-    position: absolute;
-    top: 1.015rem;
-    left: 1.4rem;
-}
-
 .footer-container__down {
+    @include flex-box;
     padding-right: 0.2rem;
     min-height: 7rem;
-    display: flex;
-    align-items: center;    
-    justify-content: space-between;
+    
 }
 
 .footer-container__copyright {
